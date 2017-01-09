@@ -14,18 +14,6 @@ disqusShortname = "terrywh"
 
 [[menu.main]]
   weight = 0
-  name = "首页"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
-  url = "/"
-
-[[menu.main]]
-  weight = 0
-  name = "首页"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
-  url = "/"
-
-[[menu.main]]
-  weight = 0
   name = "教程"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/tutorial"
@@ -36,7 +24,7 @@ disqusShortname = "terrywh"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/notebook"
 
-[[menu.bottom]]
+[[menu.main]]
   weight = 0
   name = "关于"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
