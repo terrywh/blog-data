@@ -5,7 +5,7 @@ draft = false
 title = "Hugo 静态站使用 Git 钩子配置部署"
 tags = ["git", "hugo", "hook"]
 description = "使用 Hugo 生成静态站点，并通过 Gogs 的 Git 服务，将站点更新（部署）到服务器"
-image = "/note/hugo-git-hook/hugo.png"
+coverimage = "/note/hugo-git-hook/hugo.png"
 
 +++
 

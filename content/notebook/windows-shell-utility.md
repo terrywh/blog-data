@@ -3,9 +3,9 @@
 date = "2015-11-07"
 draft = false
 title = "Windows Shell 命令笔记"
-image = "https://i-msdn.sec.s-msft.com/dynimg/IC816797.png"
-description = "总结了一些 Windows 下挺实用的 Shell 命令，例如启用 Wifi 热点，清理 DNS 缓存等"
+coverimage = "https://i-msdn.sec.s-msft.com/dynimg/IC816797.png"
 tags = ["Windows", "shell", "utility"]
+type = "post"
 
 +++
 

@@ -8,3 +8,35 @@ defaultContentLanguage = "zh-cn"
 [params]
   description = "Web Development by Go/Nodejs/PHP/C++"
   disqusShortname = "terrywh"
+  thumbnailImage = true
+  autoThumbnailImage = true
+
+[[menu.main]]
+  weight = 0
+  name = "首页"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+
+[[menu.main]]
+  weight = 0
+  name = "首页"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+
+[[menu.main]]
+  weight = 0
+  name = "教程"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/tutorial"
+
+[[menu.main]]
+  weight = 0
+  name = "笔记"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/notebook"
+
+[[menu.bottom]]
+  weight = 0
+  name = "关于"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/about"

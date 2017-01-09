@@ -1,16 +1,17 @@
 +++
 
 title = "HTML 5 资源预处理 Hints"
-description = "浏览器允我们在网页的 head 中添加特定的 link 标签，提示浏览器进行资源预处理，如资源预加载、域名预解析等等。"
+description = ""
 date = "2016-06-21"
-author = "AddyOsmani"
-authorLink = "https://plus.google.com/+AddyOsmani"
-originLink = "https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT"
+type  = "post"
 
 +++
-
+> 浏览器允我们在网页的 head 中添加特定的 link 标签，提示浏览器进行资源预处理，如资源预加载、域名预解析等等。
 > Hints to the browser that might prime the pump for resources you will need.  
-> Preload is the only exception here, being more of an instruction than just a hint.  
+> Preload is the only exception here, being more of an instruction than just a hint. 
+> **AddyOsmani** @ https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT
+
+<!--more-->
 
 在网页中给予浏览器以一定的提示，以加快后续资源的访问、展示效率。 “脚本预加载”较为特殊，与其说是“提示”，不如说是“指令”，它能直接指示浏览器预先加载脚本。
 
