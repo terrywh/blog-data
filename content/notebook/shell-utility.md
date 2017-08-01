@@ -4,7 +4,7 @@ date = "2015-11-07"
 draft = false
 title = "Shell 命令笔记"
 coverimage = "https://i-msdn.sec.s-msft.com/dynimg/IC816797.png"
-tags = ["Windows", "shell", "utility"]
+tags = ["Windows", "Shell", "Utility"]
 type = "post"
 
 +++
