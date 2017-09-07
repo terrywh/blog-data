@@ -26,6 +26,6 @@ disqusShortname = "terrywh"
 
 [[menu.main]]
   weight = 0
-  name = "关于"
+  name = "terrywh"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "https://github.com/terrywh"
