@@ -34,7 +34,7 @@
 		{{ block "main" . }}
 		<div class="row my-3">
 			<div class="col-xl-9 col-lg-12">
-				{{ $pager := .Paginate .Data.Pages 2}}
+				{{ $pager := .Paginate .Data.Pages 25}}
 				{{ $.Scratch.Set "data" $pager.Pages }}
 				{{ partial "data-recent-card.html" . }}
 

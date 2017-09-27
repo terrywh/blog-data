@@ -74,11 +74,64 @@ Preload is the only exception here, being more of an instruction than just a hin
 	</div>
 </div>
 
+<div class="card waterfall-item" style="width: 20rem;">
+	<a href="/note/2016/glibc-memory-freeing/">
+		
+			<img class="card-img-top" src="/images/default-cover.png">
+		
+	</a>
+	<div class="card-body">
+		<h4 class="card-title"><a href="/note/2016/glibc-memory-freeing/">Linux 下 GLIBC 内存回收的疑问</a></h4>
+		<div class="text-secondary">记得好早之前刚刚接触 Linux 下 C/C++ 开发的时候就有个疑问：在程序内 free 掉的空间没有立刻交换给操作系统，程序进程的内存没有减少。后来一度在开发各种长连接程序时 GOOGLE 各种资料，最近又偶尔遇到，借此机会把相关的说法整理如下。
+其中两个重点内容如下：
+ Freeing Memory Allocated with malloc：
+注意 “Occasionally” 用词；
+ Linux Programmer&rsquo;s Manual - mallopt：
+描述了上述 “Occasionally” 回收的情况；
+  根据上面的说法，基本可以总结为：
+ 内存会在 free 后被后续的 malloc 复用，当 free 的栈顶连续内存达到 M_TRIM_THRESHOLD 描述的值（默认 128kB）后回归系统
+ </div>
+		<small class="float-right badge badge-pill badge-secondary">2016-02-23</small>
+	</div>
+</div>
+
+<div class="card waterfall-item" style="width: 20rem;">
+	<a href="/note/2015/clang-install/">
+		
+			<img class="card-img-top" src="/images/2015/clang-install-1.png">
+		
+	</a>
+	<div class="card-body">
+		<h4 class="card-title"><a href="/note/2015/clang-install/">更新 GCC 后引起的 clang 安装问题</a></h4>
+		<div class="text-secondary"><blockquote>
+<p>安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题</p>
+</blockquote>
+
+<p></p></div>
+		<small class="float-right badge badge-pill badge-secondary">2015-12-03</small>
+	</div>
+</div>
+
+<div class="card waterfall-item" style="width: 20rem;">
+	<a href="/note/2015/shell-utility/">
+		
+			<img class="card-img-top" src="/images/2015/shell-utility-1.jpg">
+		
+	</a>
+	<div class="card-body">
+		<h4 class="card-title"><a href="/note/2015/shell-utility/">Shell 命令笔记</a></h4>
+		<div class="text-secondary"><blockquote>
+<p>总结了一些挺实用的 Shell 命令，Windows 和 Linux 的都有一些，如启用 Wifi 热点，清理 DNS 缓存，挂载共享等。</p>
+</blockquote>
+
+<p></p></div>
+		<small class="float-right badge badge-pill badge-secondary">2015-11-07</small>
+	</div>
+</div>
+
 </div>
 
 
-				
-				<a href="/note/page/2/" class="btn btn-info mt-3">&laquo; 向前</a>
 				
 				
 			</div>
