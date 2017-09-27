@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on Hello World</title>
+    <link>/tags/c/</link>
+    <description>Recent content in C on Hello World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
+    <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
+    <copyright>@copyright 2017</copyright>
+    <lastBuildDate>Tue, 23 Feb 2016 11:25:30 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 下 GLIBC 内存回收的疑问</title>
+      <link>/note/2016/glibc-memory-freeing/</link>
+      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>/note/2016/glibc-memory-freeing/</guid>
+      <description>记得好早之前刚刚接触 Linux 下 C/C++ 开发的时候就有个疑问：在程序内 free 掉的空间没有立刻交换给操作系统，程序进程的内存没有减少。后来一度在开发各种长连接程序时 GOOGLE 各种资料，最近又偶尔遇到，借此机会把相关的说法整理如下。
+其中两个重点内容如下：
+ Freeing Memory Allocated with malloc：
+注意 “Occasionally” 用词；
+ Linux Programmer&amp;rsquo;s Manual - mallopt：
+描述了上述 “Occasionally” 回收的情况；
+  根据上面的说法，基本可以总结为：
+ 内存会在 free 后被后续的 malloc 复用，当 free 的栈顶连续内存达到 M_TRIM_THRESHOLD 描述的值（默认 128kB）后回归系统
+ </description>
+    </item>
+    
+  </channel>
+</rss>

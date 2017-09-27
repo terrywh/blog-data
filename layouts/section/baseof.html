@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+	<link href="https://lib.baomitu.com/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+	<meta name="author" content="{{ .Site.Author.name }}" />
+	<meta name="email"  content="{{ .Site.Author.email }}" />
+	<script src="http://lib.baomitu.com/vue/2.4.4/vue.min.js"></script>
+	<link href="{{.Site.BaseURL}}css/core.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" id="app">
+		{{ block "header" . }}
+		<header class="row">
+			<nav class="col-12 navbar navbar-dark bg-dark navbar-expand-lg">
+				<a class="navbar-brand" href="{{ .Site.BaseURL }}"><strong>{{ .Site.Title }}</strong></a>
+				<button class="navbar-toggler" type="button" v-on:click="toggleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" ref="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="/note">笔记</a></li>
+						<li class="nav-item"><a class="nav-link" href="/book">教程</a></li>
+						<li class="nav-item"><a class="nav-link" href="/post">日志</a></li>
+						<li class="nav-item"><a class="nav-link" href="/work">作品</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		{{ end }}
+
+		{{ block "main" . }}
+		<div class="row my-3">
+			<div class="col-xl-9 col-lg-12">
+				{{ $pager := .Paginate .Data.Pages 2}}
+				{{ $.Scratch.Set "data" $pager.Pages }}
+				{{ partial "data-recent-card.html" . }}
+
+				{{ if $pager.HasNext }}
+				<a href="{{$pager.Next.URL}}" class="btn btn-info mt-3">&laquo; 向前</a>
+				{{ end }}
+				{{ if $pager.HasPrev }}
+				<a href="{{$pager.Prev.URL}}" class="btn btn-info mt-3">向后 &raquo;</a>
+				{{ end }}
+			</div>
+			<div class="col-xl-3 d-xl-block d-lg-none">
+				{{ $.Scratch.Set "data" (first 15 .Site.RegularPages) }}
+				{{ $.Scratch.Set "summary" false }}
+				{{ partial "site-recent-list.html" . }}
+			</div>
+		</div>
+		{{ end }}
+
+		{{ block "footer" . }}
+		<footer class="row">
+			<div class="col-12 text-secondary" style="background: #000;">
+				<small class="p-3 float-left">{{.Site.Copyright}}</small>
+				<small class="p-3 float-right">
+					Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a>
+				</small>
+			</div>
+		</footer>
+		{{ end }}
+	</div>
+	<script src="{{ .Site.BaseURL }}js/app.js"></script>
+</body>
+</html>

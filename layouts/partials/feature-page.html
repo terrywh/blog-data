@@ -1,0 +1,19 @@
+<div class="row">
+
+{{ with .Site.GetPage "page" "note" "2017/registry-utility.md" }}
+{{ partial "feature-page-item" . }}
+{{ end }}
+
+{{ with .Site.GetPage "page" "book" "2016/minesweeper/1.md" }}
+{{ partial "feature-page-item" . }}
+{{ end }}
+
+{{ with .Site.GetPage "page" "work" "2017/flame.md" }}
+{{ partial "feature-page-item" . }}
+{{ end }}
+
+{{ with .Site.GetPage "page" "note" "2015/shell-utility.md" }}
+{{ partial "feature-page-item" . }}
+{{ end }}
+
+</div>

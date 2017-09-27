@@ -1,0 +1,18 @@
+<div class="waterfall" ref="waterfall">
+{{ range ($.Scratch.Get "data") }}
+<div class="card waterfall-item" style="width: 20rem;">
+	<a href="{{.Permalink}}">
+		{{ if eq .Params.cover nil}}
+			<img class="card-img-top" src="{{ .Site.BaseURL}}images/default-cover.png">
+		{{ else }}
+			<img class="card-img-top" src="{{ .Params.cover }}">
+		{{ end }}
+	</a>
+	<div class="card-body">
+		<h4 class="card-title"><a href="{{.Permalink}}">{{ .Title }}</a></h4>
+		<div class="text-secondary">{{ .Summary }}</div>
+		<small class="float-right badge badge-pill badge-secondary">{{ .Date.Format "2006-01-02"}}</small>
+	</div>
+</div>
+{{ end }}
+</div>
