@@ -13,29 +13,29 @@ type = "post"
 
 <!--more-->
 
-#### Windows
-
-Wifi HotSpot
+* Wifi HotSpot (Windows)
 ``` bash
 netsh wlan set hostednetwork mode=allow ssid={NETWORK_NAME} key={NETWORK_PASS}
 netsh wlan start hostednetwork
 ```
 
-DNS flushCache
+* DNS flushCache (Windows)
 
 ``` bash
 ipconfig /flushdns
 ```
 
-#### Linux
-挂载共享
+* 挂载共享
 ``` bash
 sudo mount -t cifs -o username=xxxxxx,uid=2017,gid=2017,cache=none,noperm,_netdev //xx.xx.xx.xx/xxxxxx /xxxx/xxxxxx
 ```
 
-#### 通用
-
-### SSH 通道
+* SSH 通道
 ``` bash
 plink -ssh {user}@{delegate_server_addr} -pw "{delegate_server_pass}" -P {delegate_server_port} -N -L {local_port}:{target_addr}:{target_port}
+```
+
+* 静态链接 C++ 标准库
+``` bash
+clang++ -Wl,-Bstatic -lc++ -lc++abi -Wl,-Bdynamic -nostdlib++
 ```

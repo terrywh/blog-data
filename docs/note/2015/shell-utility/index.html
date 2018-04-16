@@ -43,32 +43,35 @@
 
 <p></p>
 
-<h4 id="windows">Windows</h4>
-
-<p>Wifi HotSpot</p>
+<ul>
+<li><p>Wifi HotSpot (Windows)</p>
 
 <pre><code class="language-bash">netsh wlan set hostednetwork mode=allow ssid={NETWORK_NAME} key={NETWORK_PASS}
 netsh wlan start hostednetwork
-</code></pre>
+</code></pre></li>
 
-<p>DNS flushCache</p>
+<li><p>DNS flushCache (Windows)</p></li>
+</ul>
 
 <pre><code class="language-bash">ipconfig /flushdns
 </code></pre>
 
-<h4 id="linux">Linux</h4>
-
-<p>挂载共享</p>
+<ul>
+<li><p>挂载共享</p>
 
 <pre><code class="language-bash">sudo mount -t cifs -o username=xxxxxx,uid=2017,gid=2017,cache=none,noperm,_netdev //xx.xx.xx.xx/xxxxxx /xxxx/xxxxxx
-</code></pre>
+</code></pre></li>
 
-<h4 id="通用">通用</h4>
-
-<h3 id="ssh-通道">SSH 通道</h3>
+<li><p>SSH 通道</p>
 
 <pre><code class="language-bash">plink -ssh {user}@{delegate_server_addr} -pw &quot;{delegate_server_pass}&quot; -P {delegate_server_port} -N -L {local_port}:{target_addr}:{target_port}
-</code></pre></div>
+</code></pre></li>
+
+<li><p>静态链接 C++ 标准库</p>
+
+<pre><code class="language-bash">clang++ -Wl,-Bstatic -lc++ -lc++abi -Wl,-Bdynamic -nostdlib++
+</code></pre></li>
+</ul></div>
 	</div>
 	<div class="col-xl-3 d-xl-block d-lg-none">
 		
