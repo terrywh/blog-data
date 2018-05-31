@@ -1,7 +1,7 @@
 publishDir = "./docs"
 baseURL = "/"
 defaultContentLanguage = "zh-cn"
-theme = "hyde-hyde"
+theme = "hyde-y"
 
 PaginatePath = "page"
 

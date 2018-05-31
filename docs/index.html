@@ -1,235 +1,485 @@
 <!DOCTYPE html>
-<html lang="" class="wf-firasans-n4-active wf-active">
-	<head>
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Enable responsiveness on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    
-    
-    <meta name="generator" content="Hugo 0.41" />
-    <title>Hello World</title>
-    <meta content="Hello World" property="og:title">
-    <meta content="" property="og:description">
-    <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
-    <link rel="stylesheet" href="/css/print.css" media="print">
-    <link rel="stylesheet" href="/css/poole.css">
-    <link rel="stylesheet" href="/css/hyde.css">
-    <!-- Font-Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    
-    <!-- Customised CSS -->
-    <link rel="stylesheet" href="/css/custom.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Hello World" />
-    <link href="/index.xml" rel="feed" type="application/rss+xml" title="Hello World" />
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Hello World </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
-    <body>
-        <div class="sidebar">
-	<div class="container text-center sidebar-sticky">
-		<div class="sidebar-about text-center">
-			<a href="/"><h1 class="brand">Hello World</h1></a>
-			
-			<p class="lead">
-				 Your site's description 
-			</p>
-		</div>
-		
-<div>
-	<ul class="sidebar-nav">
-		
-		
-		</li>
-	</ul>
-</div>
 
-        <p>
-		<section class="row text-center">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</section>
+<meta name="description" content="" />
 
-        </p>
-		<p class="copyright">&copy; 2018 .
-        <a href="https://creativecommons.org/licenses/by/4.0">Some Rights Reserved</a>.<br/>Built with <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-        </p>
-	</div>
-	<div>
-	</div>
-</div>
+<meta name="keywords" content="">
 
-        <div class="content container">
-            <div class="posts">
+
+<meta property="og:title" content="Hello World ">
+<meta property="og:site_name" content="Hello World"/>
+<meta property="og:url" content="/" />
+<meta property="og:locale" content="">
+
+
+<meta property="og:type" content="website" />
+
+
+
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Hello World" />
+
+<link rel="canonical" href="/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link href="/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.41" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
   
-    
-      <div class="post">
-        <h1 class="post-title"><a href="/book/2016/minesweeper/4/">扫雷（四）雷区完善（递归打开、随机布雷）</a></h1>
-        <span class="post-date">Jul 01, 2016</span>
-        <p>在 <a href="/image/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
-</p>
-        
-        <div class="read-more-link">
-            <a href="/book/2016/minesweeper/4/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/book/2016/minesweeper/3/">扫雷（三）雷区（元素定位、事件代理、背景图片）</a></h1>
-        <span class="post-date">Jun 30, 2016</span>
-        <p>经过 <a href="/tutorial/minesweeper/1">第一章</a> 和 <a href="/tutorial/minesweeper/2">第二章</a> 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
-在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
-</p>
-        
-        <div class="read-more-link">
-            <a href="/book/2016/minesweeper/3/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/book/2016/minesweeper/2/">扫雷（二）排行榜（定义和使用函数、对象）</a></h1>
-        <span class="post-date">Jun 20, 2016</span>
-        <p><a href="/tutorial/minesweeper/1">上一章</a>我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
-</p>
-        
-        <div class="read-more-link">
-            <a href="/book/2016/minesweeper/2/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/book/2016/minesweeper/1/">扫雷（一）游戏入口（概念及准备）</a></h1>
-        <span class="post-date">Jun 17, 2016</span>
-        <p>记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
-</p>
-        
-        <div class="read-more-link">
-            <a href="/book/2016/minesweeper/1/">Read More…</a>
-        </div>
-        
-        </div>
-    
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2018/atom-go-plus-goroot/">Atom 插件 go-plus 配置 GOROOT</a></h1>
-        <span class="post-date">Aug 01, 2017</span>
-        由于需要在同一台机器部署两种 GO 环境(WSL + Win)，这里对 go-plus 代码进行一点点修改，加入 goroot 配置参数来解决这个问题：
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="/">
+  Hello World
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+
+  
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:terry.wuhao[at]gmail.com">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<section id="main-content" class="container main_content homepage">
+  <header class="container header">
+    <h1>Hello World
+</h1>
+
+    <span>last update: <time datetime="2017-09-27T12:22:37&#43;08:00">27 September at 12:22pm</time>
+</span>
+
+  </header>
+  
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/note/2018/atom-go-plus-goroot/">Atom 插件 go-plus 配置 GOROOT
+</a>
+</h2>
+
+  <time datetime="2017-08-01">1 Aug, 2017</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    由于需要在同一台机器部署两种 GO 环境(WSL + Win)，这里对 go-plus 代码进行一点点修改，加入 goroot 配置参数来解决这个问题：
 // ~/.atom/packages/go-plus/lib/config/environment.js // ... // const getenvironment = (): {[string]: ?string} =&gt; { // ... if (!e.GOROOT) { let r = atom.config.get(&quot;go-plus.config.goroot&quot;) if (r &amp;&amp; r.trim() !== '') { e.GOROOT = r } } // e.GINKGO_EDITOR_INTEGRATION = 'true' // return e // }  即通过配置参数 go-plus.config.goroot 模拟环境变量。
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2017/registry-utility/">注册表常用设置</a></h1>
-        <span class="post-date">Aug 01, 2017</span>
-        <blockquote>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/note/2018/atom-go-plus-goroot/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/note/2017/registry-utility/">注册表常用设置
+</a>
+</h2>
+
+  <time datetime="2017-08-01">1 Aug, 2017</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
 <p>从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~
 </p>
-        
-        <div class="read-more-link">
-            <a href="/note/2017/registry-utility/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2016/html5-resource-hints/">HTML 5 资源预处理 Hints</a></h1>
-        <span class="post-date">Jun 21, 2016</span>
-        <blockquote>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/note/2017/registry-utility/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/book/2016/minesweeper/4/">扫雷（四）雷区完善（递归打开、随机布雷）
+</a>
+</h2>
+
+  <time datetime="2016-07-01">1 Jul, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>在 <a href="/image/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/book/2016/minesweeper/4/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/book/2016/minesweeper/3/">扫雷（三）雷区（元素定位、事件代理、背景图片）
+</a>
+</h2>
+
+  <time datetime="2016-06-30">30 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>经过 <a href="/tutorial/minesweeper/1">第一章</a> 和 <a href="/tutorial/minesweeper/2">第二章</a> 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
+在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/book/2016/minesweeper/3/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/note/2016/html5-resource-hints/">HTML 5 资源预处理 Hints
+</a>
+</h2>
+
+  <time datetime="2016-06-21">21 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
 <p>Hints to the browser that might prime the pump for resources you will need.<br />
 Preload is the only exception here, being more of an instruction than just a hint.
 <strong>AddyOsmani</strong> @ <a href="https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT">https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT</a></p>
 </blockquote>
 
 <p></p>
-        
-        <div class="read-more-link">
-            <a href="/note/2016/html5-resource-hints/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2016/glibc-memory-freeing/">Linux 下 GLIBC 内存回收的疑问</a></h1>
-        <span class="post-date">Feb 23, 2016</span>
-        记得好早之前刚刚接触 Linux 下 C/C++ 开发的时候就有个疑问：在程序内 free 掉的空间没有立刻交换给操作系统，程序进程的内存没有减少。后来一度在开发各种长连接程序时 GOOGLE 各种资料，最近又偶尔遇到，借此机会把相关的说法整理如下。
-其中两个重点内容如下：
- Freeing Memory Allocated with malloc：
-注意 “Occasionally” 用词；
- Linux Programmer&rsquo;s Manual - mallopt：
-描述了上述 “Occasionally” 回收的情况；
-  根据上面的说法，基本可以总结为：
- 内存会在 free 后被后续的 malloc 复用，当 free 的栈顶连续内存达到 M_TRIM_THRESHOLD 描述的值（默认 128kB）后回归系统
- 
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2015/clang-install/">更新 GCC 后引起的 clang 安装问题</a></h1>
-        <span class="post-date">Dec 03, 2015</span>
-        <blockquote>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/note/2016/html5-resource-hints/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/book/2016/minesweeper/2/">扫雷（二）排行榜（定义和使用函数、对象）
+</a>
+</h2>
+
+  <time datetime="2016-06-20">20 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p><a href="/tutorial/minesweeper/1">上一章</a>我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/book/2016/minesweeper/2/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/book/2016/minesweeper/1/">扫雷（一）游戏入口（概念及准备）
+</a>
+</h2>
+
+  <time datetime="2016-06-17">17 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/book/2016/minesweeper/1/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/note/2015/clang-install/">更新 GCC 后引起的 clang 安装问题
+</a>
+</h2>
+
+  <time datetime="2015-12-03">3 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
 <p>安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题</p>
 </blockquote>
 
 <p></p>
-        
-        <div class="read-more-link">
-            <a href="/note/2015/clang-install/">Read More…</a>
-        </div>
-        
-        </div>
-      <div class="post">
-        <h1 class="post-title"><a href="/note/2015/shell-utility/">Shell 命令笔记</a></h1>
-        <span class="post-date">Nov 07, 2015</span>
-        <blockquote>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/note/2015/clang-install/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/note/2015/shell-utility/">Shell 命令笔记
+</a>
+</h2>
+
+  <time datetime="2015-11-07">7 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
 <p>总结了一些挺实用的 Shell 命令，Windows 和 Linux 的都有一些，如启用 Wifi 热点，清理 DNS 缓存，挂载共享等。</p>
 </blockquote>
 
 <p></p>
-        
-        <div class="read-more-link">
-            <a href="/note/2015/shell-utility/">Read More…</a>
-        </div>
-        
-        </div>
-    
-      <div class="post">
-        <h1 class="post-title"><a href="/post/2015/migrate/">折腾到 DigitalOcean</a></h1>
-        <span class="post-date">Nov 06, 2015</span>
-        <p>blog.terrywh.net 迁移到 <a href="https://www.digitalocean.com">DigitalOcean</a> 并重新部署，使用 <a href="http://gohugo.io/">Hugo</a> 生成静态站点。
+  
+
+
 </p>
-        
-        <div class="read-more-link">
-            <a href="/post/2015/migrate/">Read More…</a>
-        </div>
-        
-        </div>
+
+
+  <div class="container readlink">
+  <a href="/note/2015/shell-utility/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="/post/2015/migrate/">折腾到 DigitalOcean
+</a>
+</h2>
+
+  <time datetime="2015-11-06">6 Nov, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>blog.terrywh.net 迁移到 <a href="https://www.digitalocean.com">DigitalOcean</a> 并重新部署，使用 <a href="http://gohugo.io/">Hugo</a> 生成静态站点。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="/post/2015/migrate/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+  
+
+</section>
+
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  @copyright 2017
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
     
-      <div class="post">
-        <h1 class="post-title"><a href="/work/2017/flame/">Flame</a></h1>
-        <span class="post-date">Sep 27, 2017</span>
-        Flame 是一个 PHP 基于 Generator 实现的异步协程式开发框架；
-        
-        </div>
-  </div>
-            <div class="footer">
-                
-            </div>
-        </div>
-        
-                
-    </body>
+
+
+
+    
+  </body>
 </html>
+
