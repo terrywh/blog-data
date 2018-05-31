@@ -3,8 +3,6 @@ baseURL = "/"
 defaultContentLanguage = "zh-cn"
 theme = "hyde-y"
 
-PaginatePath = "page"
-
 title = "Hello World"
 copyright = "@copyright 2017"
 
