@@ -1,6 +1,6 @@
 cleanDestinationDir = true
 
-baseURL = "/"
+baseURL = "https://blog.terrywh.net"
 defaultContentLanguage = "zh-cn"
 theme = "hyde-y"
 
@@ -13,3 +13,12 @@ email = "terry.wuhao[at]gmail.com"
 
 [params]
 sidebar = "left"
+topline = "C++/PHP/Go/NodeJS"
+github = "terrywh"
+rss = true
+highlight = "tomorrow"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+book = "books"

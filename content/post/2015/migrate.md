@@ -4,6 +4,7 @@ title = "折腾到 DigitalOcean"
 date = "2015-11-06"
 tags = ["git", "hugo", "hook"]
 cover = "/images/default-cover.png"
+categories = ["日志", "笔记"]
 
 +++
 

@@ -2,23 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hello World</title>
-    <link>/post/</link>
+    <link>https://blog.terrywh.net/post/</link>
     <description>Recent content in Posts on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
-    <lastBuildDate>Fri, 06 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.terrywh.net/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Atom 插件 go-plus 配置 GOROOT</title>
+      <link>https://blog.terrywh.net/post/2018/atom-go-plus-goroot/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2018/atom-go-plus-goroot/</guid>
+      <description>由于需要在同一台机器部署两种 GO 环境(WSL + Win)，这里对 go-plus 代码进行一点点修改，加入 goroot 配置参数来解决这个问题：
+// ~/.atom/packages/go-plus/lib/config/environment.js // ... // const getenvironment = (): {[string]: ?string} =&amp;gt; { // ... if (!e.GOROOT) { let r = atom.config.get(&amp;quot;go-plus.config.goroot&amp;quot;) if (r &amp;amp;&amp;amp; r.trim() !== &#39;&#39;) { e.GOROOT = r } } // e.GINKGO_EDITOR_INTEGRATION = &#39;true&#39; // return e // }  即通过配置参数 go-plus.config.goroot 模拟环境变量。</description>
+    </item>
+    
+    <item>
+      <title>注册表常用设置</title>
+      <link>https://blog.terrywh.net/post/2017/registry-utility/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2017/registry-utility/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>扫雷（四）雷区完善（递归打开、随机布雷）</title>
+      <link>https://blog.terrywh.net/post/2016/minesweeper/4/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/minesweeper/4/</guid>
+      <description>&lt;p&gt;在 &lt;a href=&#34;https://blog.terrywh.net/image/2016/minesweeper/3&#34;&gt;第三章&lt;/a&gt; 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>扫雷（三）雷区（元素定位、事件代理、背景图片）</title>
+      <link>https://blog.terrywh.net/post/2016/minesweeper/3/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/minesweeper/3/</guid>
+      <description>&lt;p&gt;经过 &lt;a href=&#34;https://blog.terrywh.net/tutorial/minesweeper/1&#34;&gt;第一章&lt;/a&gt; 和 &lt;a href=&#34;https://blog.terrywh.net/tutorial/minesweeper/2&#34;&gt;第二章&lt;/a&gt; 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。&lt;br /&gt;
+在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML 5 资源预处理 Hints</title>
+      <link>https://blog.terrywh.net/post/2016/html5-resource-hints/</link>
+      <pubDate>Tue, 21 Jun 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/html5-resource-hints/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Hints to the browser that might prime the pump for resources you will need.&lt;br /&gt;
+Preload is the only exception here, being more of an instruction than just a hint.
+&lt;strong&gt;AddyOsmani&lt;/strong&gt; @ &lt;a href=&#34;https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT&#34;&gt;https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>扫雷（二）排行榜（定义和使用函数、对象）</title>
+      <link>https://blog.terrywh.net/post/2016/minesweeper/2/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/minesweeper/2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.terrywh.net/tutorial/minesweeper/1&#34;&gt;上一章&lt;/a&gt;我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>扫雷（一）游戏入口（概念及准备）</title>
+      <link>https://blog.terrywh.net/post/2016/minesweeper/1/</link>
+      <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/minesweeper/1/</guid>
+      <description>&lt;p&gt;记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 下 GLIBC 内存回收的疑问</title>
+      <link>https://blog.terrywh.net/post/2016/glibc-memory-freeing/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2016/glibc-memory-freeing/</guid>
+      <description>记得好早之前刚刚接触 Linux 下 C/C++ 开发的时候就有个疑问：在程序内 free 掉的空间没有立刻交换给操作系统，程序进程的内存没有减少。后来一度在开发各种长连接程序时 GOOGLE 各种资料，最近又偶尔遇到，借此机会把相关的说法整理如下。
+其中两个重点内容如下：
+ Freeing Memory Allocated with malloc：
+注意 “Occasionally” 用词；
+ Linux Programmer&amp;rsquo;s Manual - mallopt：
+描述了上述 “Occasionally” 回收的情况；
+  根据上面的说法，基本可以总结为：
+ 内存会在 free 后被后续的 malloc 复用，当 free 的栈顶连续内存达到 M_TRIM_THRESHOLD 描述的值（默认 128kB）后回归系统
+ </description>
+    </item>
+    
+    <item>
+      <title>更新 GCC 后引起的 clang 安装问题</title>
+      <link>https://blog.terrywh.net/post/2015/clang-install/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2015/clang-install/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shell 命令笔记</title>
+      <link>https://blog.terrywh.net/post/2015/shell-utility/</link>
+      <pubDate>Sat, 07 Nov 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2015/shell-utility/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;总结了一些挺实用的 Shell 命令，Windows 和 Linux 的都有一些，如启用 Wifi 热点，清理 DNS 缓存，挂载共享等。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>折腾到 DigitalOcean</title>
-      <link>/post/2015/migrate/</link>
+      <link>https://blog.terrywh.net/post/2015/migrate/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>/post/2015/migrate/</guid>
+      <guid>https://blog.terrywh.net/post/2015/migrate/</guid>
       <description>&lt;p&gt;blog.terrywh.net 迁移到 &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; 并重新部署，使用 &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 生成静态站点。
 &lt;/p&gt;</description>
     </item>

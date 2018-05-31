@@ -1,16 +1,15 @@
-[book]
-    Name = "教程"
-    URL = "/book"
+[0-posts]
+	Name = "列表"
+	URL = "/post"
 
-[work]
-	Name = "作品"
-	URL = "/work"
+[2-tags]
+	Name = "标签"
+	URL = "/tags"
 
-[post]
-    Name = "日志"
-    URL = "/post"
+[3-books]
+	Name = "教程"
+	URL = "/books"
 
-[note]
-    Name = "笔记"
-    URL = "/note"
-
+[4-flame]
+	Name = "Flame"
+	URL = "/flame"

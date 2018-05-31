@@ -19,7 +19,7 @@
 
 <meta property="og:title" content="Hello World ">
 <meta property="og:site_name" content="Hello World"/>
-<meta property="og:url" content="/" />
+<meta property="og:url" content="https://blog.terrywh.net/" />
 <meta property="og:locale" content="">
 
 
@@ -27,12 +27,12 @@
 
 
 
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Hello World" />
+<link href="https://blog.terrywh.net/index.xml" rel="alternate" type="application/rss+xml" title="Hello World" />
 
-<link rel="canonical" href="/" />
+<link rel="canonical" href="https://blog.terrywh.net/" />
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
-<link href="/favicon.png" rel="icon">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.terrywh.net/touch-icon-144-precomposed.png">
+<link href="https://blog.terrywh.net/favicon.png" rel="icon">
 
 <meta name="generator" content="Hugo 0.41" />
 
@@ -44,7 +44,7 @@
 <link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/style.css">
-
+<link rel="stylesheet" href="/css/highlight/tomorrow.css">
 
   
   
@@ -54,7 +54,7 @@
     <header id="main-header" class="container main_header">
   <div class="container brand">
   <div class="container title h1-like">
-  <a class="baselink" href="/">
+  <a class="baselink" href="https://blog.terrywh.net">
   Hello World
 
 </a>
@@ -64,6 +64,8 @@
   
 <div class="container topline">
   
+  C++/PHP/Go/NodeJS
+
 
 </div>
 
@@ -75,13 +77,13 @@
 
 
   
-<a href="/book">教程</a>
+<a href="https://blog.terrywh.net/post">列表</a>
 
-<a href="/note">笔记</a>
+<a href="https://blog.terrywh.net/tags">标签</a>
 
-<a href="/post">日志</a>
+<a href="https://blog.terrywh.net/books">教程</a>
 
-<a href="/work">作品</a>
+<a href="https://blog.terrywh.net/flame">Flame</a>
 
 
 </nav>
@@ -93,6 +95,8 @@
 
 
 
+<a id="contact-link-github" class="contact_link" href="https://github.com/terrywh">
+  <span class="fa fa-github-square"></span><span>github</span></a>
 
 
 
@@ -112,6 +116,10 @@
 
 
 
+
+
+<a id="contact-link-rss" class="contact_link" href="https://blog.terrywh.net/index.xml" type="application/rss+xml">
+  <span class="fa fa-rss-square"></span><span>rss</span></a>
 
 
 
@@ -136,18 +144,79 @@
   
     <article class="container content summary">
   <div class="container hat">
-  <h2><a href="/post/2015/migrate/">折腾到 DigitalOcean
+  <h2><a href="https://blog.terrywh.net/flame/">Flame
 </a>
 </h2>
 
-  <time datetime="2015-11-06">6 Nov, 2015</time>
+  <time datetime="2017-09-27">27 Sep, 2017</time>
 
 </div>
 
   <p class="container content">
   
   
-    <p>blog.terrywh.net 迁移到 <a href="https://www.digitalocean.com">DigitalOcean</a> 并重新部署，使用 <a href="http://gohugo.io/">Hugo</a> 生成静态站点。
+    Flame 是一个 基于 PHP 协程 Generator 实现的异步协程式开发框架:
+&lt;?php // 框架初始化（自动设置进程名称） flame\init(&quot;http-server&quot;, [ &quot;worker&quot; =&gt; 4, // 多进程服务 ]); // 启用一个协程作为入口 flame\go(function() { // 创建 http 处理器 $handler = new flame\net\http\handler(); // 设置默认处理程序 $handler-&gt;handle(function($req, $res) { yield $res-&gt;write_header(404); yield flame\time\sleep(2000); yield $res-&gt;end(&quot;not found&quot;); })-&gt;get(&quot;/hello&quot;, function($req, $res) { yield $res-&gt;end(&quot;hello world&quot;); }); // 创建网络服务器（这里使用 TCP 服务器） $server = new flame\net\tcp_server(); // 指定处理程序 $server-&gt;handle($handler); // 绑定地址（支持 IPv6） $server-&gt;bind(&quot;::&quot;, 19001); yield $server-&gt;run(); }); // 框架调度执行 flame\run();   项目 文档 示例  
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/flame/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2018/atom-go-plus-goroot/">Atom 插件 go-plus 配置 GOROOT
+</a>
+</h2>
+
+  <time datetime="2017-08-01">1 Aug, 2017</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    由于需要在同一台机器部署两种 GO 环境(WSL + Win)，这里对 go-plus 代码进行一点点修改，加入 goroot 配置参数来解决这个问题：
+// ~/.atom/packages/go-plus/lib/config/environment.js // ... // const getenvironment = (): {[string]: ?string} =&gt; { // ... if (!e.GOROOT) { let r = atom.config.get(&quot;go-plus.config.goroot&quot;) if (r &amp;&amp; r.trim() !== '') { e.GOROOT = r } } // e.GINKGO_EDITOR_INTEGRATION = 'true' // return e // }  即通过配置参数 go-plus.config.goroot 模拟环境变量。
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2018/atom-go-plus-goroot/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2017/registry-utility/">注册表常用设置
+</a>
+</h2>
+
+  <time datetime="2017-08-01">1 Aug, 2017</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
+<p>从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~
 </p>
   
 
@@ -156,7 +225,225 @@
 
 
   <div class="container readlink">
-  <a href="/post/2015/migrate/">Read more &rarr;</a>
+  <a href="https://blog.terrywh.net/post/2017/registry-utility/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/minesweeper/4/">扫雷（四）雷区完善（递归打开、随机布雷）
+</a>
+</h2>
+
+  <time datetime="2016-07-01">1 Jul, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>在 <a href="/image/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/minesweeper/4/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/minesweeper/3/">扫雷（三）雷区（元素定位、事件代理、背景图片）
+</a>
+</h2>
+
+  <time datetime="2016-06-30">30 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>经过 <a href="/tutorial/minesweeper/1">第一章</a> 和 <a href="/tutorial/minesweeper/2">第二章</a> 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
+在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/minesweeper/3/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/html5-resource-hints/">HTML 5 资源预处理 Hints
+</a>
+</h2>
+
+  <time datetime="2016-06-21">21 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
+<p>Hints to the browser that might prime the pump for resources you will need.<br />
+Preload is the only exception here, being more of an instruction than just a hint.
+<strong>AddyOsmani</strong> @ <a href="https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT">https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT</a></p>
+</blockquote>
+
+<p></p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/html5-resource-hints/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/minesweeper/2/">扫雷（二）排行榜（定义和使用函数、对象）
+</a>
+</h2>
+
+  <time datetime="2016-06-20">20 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p><a href="/tutorial/minesweeper/1">上一章</a>我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/minesweeper/2/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/minesweeper/1/">扫雷（一）游戏入口（概念及准备）
+</a>
+</h2>
+
+  <time datetime="2016-06-17">17 Jun, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <p>记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
+</p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/minesweeper/1/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2016/glibc-memory-freeing/">Linux 下 GLIBC 内存回收的疑问
+</a>
+</h2>
+
+  <time datetime="2016-02-23">23 Feb, 2016</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    在 Linux 系统中 GLIBC 不会立刻回收 free 的内存，这里有一些内部机制，通过 Google 最终在 gnu 官网和 man 手册网站找到了相关说明
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2016/glibc-memory-freeing/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2015/clang-install/">更新 GCC 后引起的 clang 安装问题
+</a>
+</h2>
+
+  <time datetime="2015-12-03">3 Dec, 2015</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    <blockquote>
+<p>安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题</p>
+</blockquote>
+
+<p></p>
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2015/clang-install/">Read more &rarr;</a>
 
 </div>
 
@@ -165,6 +452,39 @@
 
   
   
+<div class="container pagination">
+  
+
+
+<a aria-label="First" href="https://blog.terrywh.net/">
+  <span aria-hidden="true">««</span>
+</a>
+
+<a class="disabled" aria-label="Previous" href="#">
+  <span aria-hidden="true">«</span>
+</a>
+
+
+<a class="active" href="https://blog.terrywh.net/">
+  1
+</a>
+
+<a href="https://blog.terrywh.net/page/2/">
+  2
+</a>
+
+
+<a aria-label="Next" href="https://blog.terrywh.net/page/2/">
+  <span aria-hidden="true">»</span>
+</a>
+
+<a aria-label="Last" href="https://blog.terrywh.net/page/2/">
+  <span aria-hidden="true">»»</span>
+</a>
+
+
+</div>
+
 
 </section>
 
@@ -202,6 +522,9 @@
     </main>
     
 
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
     
