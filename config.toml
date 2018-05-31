@@ -1,4 +1,5 @@
-publishDir = "./docs"
+cleanDestinationDir = true
+
 baseURL = "/"
 defaultContentLanguage = "zh-cn"
 theme = "hyde-y"
