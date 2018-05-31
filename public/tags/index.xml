@@ -8,7 +8,7 @@
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
-    <lastBuildDate>Tue, 23 Feb 2016 11:25:30 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Feb 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>C</title>
       <link>/tags/c/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/c/</guid>
       <description></description>
@@ -43,7 +43,7 @@
     <item>
       <title>Cpp</title>
       <link>/tags/cpp/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/cpp/</guid>
       <description></description>
@@ -61,7 +61,7 @@
     <item>
       <title>Free</title>
       <link>/tags/free/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/free/</guid>
       <description></description>
@@ -79,7 +79,7 @@
     <item>
       <title>Glibc</title>
       <link>/tags/glibc/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/glibc/</guid>
       <description></description>
@@ -124,7 +124,7 @@
     <item>
       <title>Linux</title>
       <link>/tags/linux/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/linux/</guid>
       <description></description>
@@ -133,7 +133,7 @@
     <item>
       <title>Memory</title>
       <link>/tags/memory/</link>
-      <pubDate>Tue, 23 Feb 2016 11:25:30 +0800</pubDate>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>/tags/memory/</guid>
       <description></description>
