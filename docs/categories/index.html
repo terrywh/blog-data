@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.41" />
     
-    <title>Atom 插件 go-plus 配置 GOROOT &middot; Hello World</title>
-    <meta content="Atom 插件 go-plus 配置 GOROOT - Hello World" property="og:title">
+    <title>Categories &middot; Hello World</title>
+    <meta content="Categories - Hello World" property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -31,7 +31,9 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    
+    <!-- RSS -->
+    <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Hello World" />
+    <link href="/categories/index.xml" rel="feed" type="application/rss+xml" title="Hello World" />
 
 	</head>
     <body>
@@ -78,61 +80,13 @@
 </div>
 
         <div class="content container">
-            <div class="post">
-  <h1>Atom 插件 go-plus 配置 GOROOT</h1>
-  
-  <div class="col-sm-12 col-md-12">
-    <span class="text-left post-date meta">
-            
-       
-        <i class="fas fa-calendar-alt"></i> Aug 01, 2017
-      
-      
-      
-      
-        
-        
-            <br/>
-             <i class="fas fa-tags"></i>
-            
-            <a class="meta" href="/tags/registry">registry</a> 
-        
-            <a class="meta" href="/tags/utility">utility</a> 
-        
-            <a class="meta" href="/tags/windows">windows</a>
-        
-      
-      
-      <br/>
-      <i class="fas fa-clock"></i> 1 min read 
-      </span>  
-  </div>    
-  
-  <p>由于需要在同一台机器部署两种 GO 环境(WSL + Win)，这里对 go-plus 代码进行一点点修改，加入 goroot 配置参数来解决这个问题：</p>
+            <h1 class="title">Categories</h1>
+<ul class="posts">
+    
+</ul>
 
-<pre><code class="language-javascript">// ~/.atom/packages/go-plus/lib/config/environment.js
-// ...
-// const getenvironment = (): {[string]: ?string} =&gt; {
-// ...
-  if (!e.GOROOT) {
-    let r = atom.config.get(&quot;go-plus.config.goroot&quot;)
-    if (r &amp;&amp; r.trim() !== '') {
-        e.GOROOT = r
-    }
-  }
-//  e.GINKGO_EDITOR_INTEGRATION = 'true'
-//  return e
-// }
-</code></pre>
-
-<p>即通过配置参数 <code>go-plus.config.goroot</code> 模拟环境变量。</p>
-
-</div>
             <div class="footer">
                 
-
-    
-
             </div>
         </div>
         
