@@ -3,7 +3,6 @@
 title = "HTML 5 资源预处理 Hints"
 description = ""
 date = "2016-06-21"
-type  = "post"
 
 +++
 > Hints to the browser that might prime the pump for resources you will need.  

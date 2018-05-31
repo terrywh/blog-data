@@ -1,11 +1,9 @@
 +++
 
-date = "2017-08-01"
-draft = false
 title = "注册表常用设置"
-cover = "/images/2017/registry-utility-1.png"
+date = "2017-08-01"
 tags = ["Windows", "Registry", "Utility"]
-type = "post"
+cover = "/images/2017/registry-utility-1.png"
 
 +++
 

@@ -1,9 +1,10 @@
 +++
-date = "2015-11-06"
-draft = false
+
 title = "折腾到 DigitalOcean"
+date = "2015-11-06"
 tags = ["git", "hugo", "hook"]
 cover = "/images/default-cover.png"
+
 +++
 
 blog.terrywh.net 迁移到 [DigitalOcean](https://www.digitalocean.com) 并重新部署，使用 [Hugo](http://gohugo.io/) 生成静态站点。

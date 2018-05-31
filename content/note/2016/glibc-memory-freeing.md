@@ -1,9 +1,9 @@
 +++
 
-description = "在 Linux 系统中 GLIBC 不会立刻回收 free 的内存，这里有一些内部机制，通过 Google 最终在 gnu 官网和 man 手册网站找到了相关说明"
-Tags = ["C", "CPP", "Linux", "GLIBC",  "free", "memory"]
-date = "2016-02-23"
 title = "Linux 下 GLIBC 内存回收的疑问"
+description = "在 Linux 系统中 GLIBC 不会立刻回收 free 的内存，这里有一些内部机制，通过 Google 最终在 gnu 官网和 man 手册网站找到了相关说明"
+tags = ["C", "CPP", "Linux", "GLIBC",  "free", "memory"]
+date = "2016-02-23"
 
 +++
 

@@ -1,11 +1,9 @@
 +++
 
-date = "2017-08-01"
-draft = false
 title = "Atom 插件 go-plus 配置 GOROOT"
-cover = "/images/2017/registry-utility-1.png"
+date = "2017-08-01"
 tags = ["Windows", "Registry", "Utility"]
-type = "post"
+cover = "/images/2017/registry-utility-1.png"
 
 +++
 

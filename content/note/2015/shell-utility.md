@@ -1,11 +1,9 @@
 +++
 
-date = "2015-11-07"
-draft = false
 title = "Shell 命令笔记"
-cover = "/images/2015/shell-utility-1.jpg"
+date = "2015-11-07"
 tags = ["Windows", "Shell", "Utility"]
-type = "post"
+cover = "/images/2015/shell-utility-1.jpg"
 
 +++
 
