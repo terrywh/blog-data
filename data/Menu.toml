@@ -1,0 +1,16 @@
+[book]
+    Name = "教程"
+    URL = "/book"
+
+[work]
+	Name = "作品"
+	URL = "/work"
+
+[post]
+    Name = "日志"
+    URL = "/post"
+
+[note]
+    Name = "笔记"
+    URL = "/note"
+
