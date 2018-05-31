@@ -65,7 +65,7 @@
     },
     "datePublished": "2016-02-23",
     "description": "在 Linux 系统中 GLIBC 不会立刻回收 free 的内存，这里有一些内部机制，通过 Google 最终在 gnu 官网和 man 手册网站找到了相关说明",
-    "wordCount": 37
+    "wordCount": 205
   }
 </script>
 
@@ -181,7 +181,7 @@
 
   
   &middot; Read in about 1 min
-  &middot; (37 Words)
+  &middot; (205 Words)
   <br>
   
 <a class="label" href="https://blog.terrywh.net/tags/c">C</a>
@@ -208,23 +208,43 @@
 <p>其中两个重点内容如下：</p>
 
 <ol>
-<li><p><a href="http://www.gnu.org/software/libc/manual/html_node/Freeing-after-Malloc.html">Freeing Memory Allocated with malloc</a>：</p>
-
-<p><img src="/images/2016/glibc-memory-freeing-1.gif" alt="glibc freeing after malloc" /></p>
-
-<p>注意 “<strong>Occasionally</strong>” 用词；</p></li>
-
-<li><p><a href="http://man7.org/linux/man-pages/man3/mallopt.3.html">Linux Programmer&rsquo;s Manual - mallopt</a>：</p>
-
-<p><img src="/images/2016/glibc-memory-freeing-2.gif" alt="glibc freeing after malloc" /></p>
-
-<p>描述了上述 “<strong>Occasionally</strong>” 回收的情况；</p></li>
+<li><a href="http://www.gnu.org/software/libc/manual/html_node/Freeing-after-Malloc.html">Freeing Memory Allocated with malloc</a>：</li>
 </ol>
 
-<p>根据上面的说法，基本可以总结为：</p>
+<blockquote>
+<p>Occasionally, <code>free</code> can actually return memory to the operating system and make the process smaller. Usually, all it can do is allow a later call to <code>malloc</code> to reuse the space. In the meantime, the space remains in your program as part of a free-list used internally by <code>malloc</code>.</p>
+</blockquote>
+
+<pre><code>注意这里的 “**Occasionally**” 用词；
+</code></pre>
+
+<ol>
+<li><a href="http://man7.org/linux/man-pages/man3/mallopt.3.html">Linux Programmer&rsquo;s Manual - mallopt</a>：</li>
+</ol>
 
 <blockquote>
-<p><strong>内存会在 <code>free</code> 后被后续的 <code>malloc</code> 复用，当 <code>free</code> 的栈顶连续内存达到 <code>M_TRIM_THRESHOLD</code> 描述的值（默认 128kB）后回归系统</strong></p>
+<p><strong>M_TRIM_THRESHOLD</strong><br />
+When the amount of contiguous free memory at the top of the
+heap grows sufficiently large, <code>free(3)</code> employs <code>sbrk(2)</code> to
+release this memory back to the system.  (This can be useful
+in programs that continue to execute for a long period after
+freeing a significant amount of memory.)  The <code>M_TRIM_THRESHOLD</code>
+parameter specifies the minimum size (in bytes) that this
+block of memory must reach before <code>sbrk(2)</code> is used to trim the
+heap.</p>
+
+<p>The default value for this parameter is <code>128*1024</code>. Setting <code>M_TRIM_THRESHOLD</code> to -1 disables trimming completely.</p>
+
+<p>Modifying <code>M_TRIM_THRESHOLD</code> is a trade-off between increasing
+the number of system calls (when the parameter is set low) and
+wasting unused memory at the top of the heap (when the
+parameter is set high).</p>
+</blockquote>
+
+<p>根据上面的资料，总结一下：</p>
+
+<blockquote>
+<p><strong>内存会在 <code>free</code> 后被后续的 <code>malloc</code> 复用，当 <code>free</code> 的栈顶连续内存达到 <code>M_TRIM_THRESHOLD</code> 描述的值（默认 128kB）后归还系统;</strong></p>
 </blockquote>
 
 </div>
