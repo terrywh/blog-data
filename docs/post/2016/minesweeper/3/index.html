@@ -195,7 +195,7 @@
 </header>
 
   <div class="container content">
-  <p>经过 <a href="/tutorial/minesweeper/1">第一章</a> 和 <a href="/tutorial/minesweeper/2">第二章</a> 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
+  <p>经过 [第一章][chapter-1] 和 [第二章][chapter-2] 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
 在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
 </p>
 
@@ -307,7 +307,7 @@ function openCell($cell) {
 
 <p><img src="/image/2016/minesweeper/3-field-mask.png" alt="雷区绘制和点击效果" /></p>
 
-<p>比较<a href="/tutorial/minesweeper/1">第一章</a>中我们对“开始游戏”按钮点击的处理，这里有一点区别。我们没有直接将事件“绑定”在被点击的元素上而是绑定了在其“父级”元素上。这样做是因为被监听的元素是后来动态创建的，而且数量较多。一个一个去对它们做绑定事件，过于繁琐。所以，这里使用“父级元素” <code>.field</code> 代理了子元素 <code>.mask</code> 的点击事件，来简化处理。</p>
+<p>比较[第一章][chapter-1]中我们对“开始游戏”按钮点击的处理，这里有一点区别。我们没有直接将事件“绑定”在被点击的元素上而是绑定了在其“父级”元素上。这样做是因为被监听的元素是后来动态创建的，而且数量较多。一个一个去对它们做绑定事件，过于繁琐。所以，这里使用“父级元素” <code>.field</code> 代理了子元素 <code>.mask</code> 的点击事件，来简化处理。</p>
 
 <p>注意，我们使用 <code>$cell</code> 获取到了当前的格子元素，其实还可以通过获取我们保存在该元素属性 <code>data-x</code> / <code>data-y</code> 的下标 配合 <code>cells</code> 来获取和访问其他元素，例如：</p>
 
@@ -450,7 +450,7 @@ window.MineSweeperField = {
 
 <h4 id="附件">附件</h4>
 
-<p>到本章为止的完整代码，可以从这里<a href="/image/2016/minesweeper/minesweeper-3.zip">下载</a>，供大家参照。</p>
+<p>到本章为止的完整代码，可以从这里<a href="/books/minesweeper/minesweeper-3.zip">下载</a>，供大家参照。</p>
 </div>
 
 
