@@ -8,7 +8,7 @@ type = "post"
 
 +++
 
-`Flame` 是一个 基于 PHP 协程 `Generator` 实现的异步协程式框架（扩展）:
+`Flame` 是一个 基于 PHP 协程 `Generator` 实现的异步协程式网络开发框架（扩展）:
 
 ``` PHP
 <?php
@@ -18,22 +18,25 @@ flame\init("http-server", [
 ]);
 // 启用一个协程作为入口
 flame\go(function() {
-	// 创建 http 处理器
-	$handler = new flame\net\http\handler();
+	// 创建 http 服务器
+	$server = new flame\http\server(":::7678");
 	// 设置默认处理程序
-	$handler->handle(function($req, $res) {
-		yield $res->write_header(404);
-		yield flame\time\sleep(2000);
-		yield $res->end("not found");
+	$server->before(function($req, $res, $match) {
+		if($match) {
+			$req->data["time"] = flame\time\now();
+		}
 	})->get("/hello", function($req, $res) {
-		yield $res->end("hello world");
+		yield $res->write("hello ");
+		yield $res->end(" world");
+	})->after(function($req, $res, $match) {
+		if($match) {
+			flame\log\info("cost", flame\time\now() - $req->data["time"], "ms");
+		}else{
+			$res->status = 404;
+			$res->body = "not found";
+		}
 	});
-	// 创建网络服务器（这里使用 TCP 服务器）
-	$server = new flame\net\tcp_server();
-	// 指定处理程序
-	$server->handle($handler);
-	// 绑定地址（支持 IPv6）
-	$server->bind("::", 19001);
+	// 启动并运行服务器
 	yield $server->run();
 });
 // 框架调度执行
