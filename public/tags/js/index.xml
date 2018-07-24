@@ -19,7 +19,7 @@
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2016/minesweeper/4/</guid>
-      <description>&lt;p&gt;在 &lt;a href=&#34;https://blog.terrywh.net/image/2016/minesweeper/3&#34;&gt;第三章&lt;/a&gt; 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
+      <description>&lt;p&gt;在 &lt;a href=&#34;https://blog.terrywh.net/images/2016/minesweeper/3&#34;&gt;第三章&lt;/a&gt; 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
 &lt;/p&gt;</description>
     </item>
     

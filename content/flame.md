@@ -8,7 +8,7 @@ type = "post"
 
 +++
 
-`Flame` 是一个 基于 PHP 协程 `Generator` 实现的异步协程式开发框架:
+`Flame` 是一个 基于 PHP 协程 `Generator` 实现的异步协程式框架（扩展）:
 
 ``` PHP
 <?php
@@ -40,6 +40,6 @@ flame\go(function() {
 flame\run();
 ```
 
-* [项目](https://github.com/terrywh/php-flame)
+#### [https://github.com/terrywh/php-flame](https://github.com/terrywh/php-flame)
 * [文档](https://terrywh.github.io/php-flame)
-* [示例](https://github.com/terrywh/php-flame/tree/master/test/flame)
+* [示例](https://github.com/terrywh/php-flame/blob/master/examples/http_server.php)

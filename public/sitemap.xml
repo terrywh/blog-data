@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.terrywh.net/post/2018/linux-grub-install/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/flame/</loc>
     <lastmod>2017-09-27T12:22:37+08:00</lastmod>
   </url>
@@ -63,6 +68,12 @@
   </url>
   
   <url>
+    <loc>https://blog.terrywh.net/tags/archlinux/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/tags/atom/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -109,6 +120,12 @@
   </url>
   
   <url>
+    <loc>https://blog.terrywh.net/tags/deepin/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/tags/free/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -139,8 +156,14 @@
   </url>
   
   <url>
+    <loc>https://blog.terrywh.net/tags/grub/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/</loc>
-    <lastmod>2017-09-27T12:22:37+08:00</lastmod>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,7 +193,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/tags/linux/</loc>
-    <lastmod>2016-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -182,7 +205,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/post/</loc>
-    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -200,7 +223,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/tags/</loc>
-    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -213,6 +236,18 @@
   <url>
     <loc>https://blog.terrywh.net/tags/windows/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.terrywh.net/tags/%E5%90%AF%E5%8A%A8/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.terrywh.net/tags/%E5%BC%95%E5%AF%BC/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,7 +277,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

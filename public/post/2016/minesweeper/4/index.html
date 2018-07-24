@@ -195,7 +195,7 @@
 </header>
 
   <div class="container content">
-  <p>在 <a href="/image/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
+  <p>在 <a href="/images/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
 </p>
 
 <blockquote>
@@ -256,7 +256,7 @@ function openCell($cell) {
 cells[key].find(&quot;.mask&quot;).prop(&quot;hidden&quot;, false);
 </code></pre>
 
-<p>对比 <a href="/image/2016/minesweeper/3">第三章</a> 中对格子中数字进行调整的代码，各位可能会发现一个问题：没有边界检查！就是说，我们可能对雷区外进行了数字设置，我们得修理这个问题（修改 <code>incrCell()</code> 的代码）：</p>
+<p>对比 <a href="/2016/minesweeper/3">第三章</a> 中对格子中数字进行调整的代码，各位可能会发现一个问题：没有边界检查！就是说，我们可能对雷区外进行了数字设置，我们得修理这个问题（修改 <code>incrCell()</code> 的代码）：</p>
 
 <pre><code class="language-js">// 使指定的格子中的提示数字加 1
 function incrCell(x, y) {
@@ -376,7 +376,7 @@ if($cell.hasClass(&quot;bomb&quot;)) {
 
 <p>这个时候大家测试我们目前的程序，需要在 开发者工具 <kbd>F12</kbd> 的 <strong>console</strong> 控制台中调用一次 <code>reset()</code> 才能隐藏这个遮罩层：</p>
 
-<p><img src="/image/2016/minesweeper/4-field-victory.png" alt="胜利" /></p>
+<p><img src="/images/2016/minesweeper/4-field-victory.png" alt="胜利" /></p>
 
 <h4 id="布雷">布雷</h4>
 
@@ -451,7 +451,7 @@ window.MineSweeperField = {
 
 <h4 id="附件">附件</h4>
 
-<p>到目前位为止开发的完整代码，可以在这里<a href="/image/2016/minesweeper/minesweeper-4.zip">下载</a>.</p>
+<p>到目前位为止开发的完整代码，可以在这里<a href="/images/2016/minesweeper/minesweeper-4.zip">下载</a>.</p>
 </div>
 
 

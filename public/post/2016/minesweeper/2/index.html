@@ -336,7 +336,7 @@ if(!data) {
 
 <p>我们可以在浏览器中打开网页，并按 <kbd>F12</kbd> 键打开调试界面，在 <code>Resource</code> 面板中，找到 <code>localStorage</code> 项，可以看到我们的程序已经将数据成功的写入了：</p>
 
-<p><img src="/image/2016/minesweeper/2-rank-f12.png" alt="排行榜成功存储" /></p>
+<p><img src="/images/2016/minesweeper/2-rank-f12.png" alt="排行榜成功存储" /></p>
 
 <p>大家可以尝试通过这个面板修改 localStorage 的内容，刷新页面后会发现展示的内容也会随之发生变化。</p>
 
@@ -382,7 +382,7 @@ window.MineSweeperRank = { // window 为全局命名空间，同时也代表了�
 
 <p>上面函数目前没有实际的调用者，我们可以在 &ldquo;开发者工具&rdquo; (<kbd>F12</kbd>) 的 <code>Console</code> 界面中输入调用代码（例如：<code>MineSweeperRank.appendUserRank(&quot;Terry&quot;,450)</code>） 尝试调用，看看效果：</p>
 
-<p><img src="/image/2016/minesweeper/2-rank-api.png" alt="尝试调用接口" /></p>
+<p><img src="/images/2016/minesweeper/2-rank-api.png" alt="尝试调用接口" /></p>
 
 <p>从分工明确的角度，我们也给 “入口” 增加 “接口” 功能，我们将 “获取用户输入的名字” 和 “开始游戏” 作为 “接口” 封装。 注意，前者与上述 排行榜 接口 类似，是“调用”方式的接口。而后者，则是“<strong>触发</strong>”形式的接口。</p>
 

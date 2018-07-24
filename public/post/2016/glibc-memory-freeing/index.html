@@ -224,21 +224,11 @@
 
 <blockquote>
 <p><strong>M_TRIM_THRESHOLD</strong><br />
-When the amount of contiguous free memory at the top of the
-heap grows sufficiently large, <code>free(3)</code> employs <code>sbrk(2)</code> to
-release this memory back to the system.  (This can be useful
-in programs that continue to execute for a long period after
-freeing a significant amount of memory.)  The <code>M_TRIM_THRESHOLD</code>
-parameter specifies the minimum size (in bytes) that this
-block of memory must reach before <code>sbrk(2)</code> is used to trim the
-heap.</p>
+When the amount of contiguous free memory at the top of the heap grows sufficiently large, <code>free(3)</code> employs <code>sbrk(2)</code> to release this memory back to the system.  (This can be useful in programs that continue to execute for a long period after freeing a significant amount of memory.)  The <code>M_TRIM_THRESHOLD</code> parameter specifies the minimum size (in bytes) that this block of memory must reach before <code>sbrk(2)</code> is used to trim the heap.</p>
 
 <p>The default value for this parameter is <code>128*1024</code>. Setting <code>M_TRIM_THRESHOLD</code> to -1 disables trimming completely.</p>
 
-<p>Modifying <code>M_TRIM_THRESHOLD</code> is a trade-off between increasing
-the number of system calls (when the parameter is set low) and
-wasting unused memory at the top of the heap (when the
-parameter is set high).</p>
+<p>Modifying <code>M_TRIM_THRESHOLD</code> is a trade-off between increasing the number of system calls (when the parameter is set low) and wasting unused memory at the top of the heap (when the parameter is set high).</p>
 </blockquote>
 
 <p>根据上面的资料，总结一下：</p>

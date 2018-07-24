@@ -8,10 +8,19 @@
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
-    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.terrywh.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Archlinux</title>
+      <link>https://blog.terrywh.net/tags/archlinux/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/archlinux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Atom</title>
@@ -68,6 +77,15 @@
     </item>
     
     <item>
+      <title>Deepin</title>
+      <link>https://blog.terrywh.net/tags/deepin/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/deepin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Free</title>
       <link>https://blog.terrywh.net/tags/free/</link>
       <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
@@ -113,6 +131,15 @@
     </item>
     
     <item>
+      <title>Grub</title>
+      <link>https://blog.terrywh.net/tags/grub/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/grub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hook</title>
       <link>https://blog.terrywh.net/tags/hook/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
@@ -151,7 +178,7 @@
     <item>
       <title>Linux</title>
       <link>https://blog.terrywh.net/tags/linux/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/linux/</guid>
       <description></description>
@@ -199,6 +226,24 @@
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>启动</title>
+      <link>https://blog.terrywh.net/tags/%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/%E5%90%AF%E5%8A%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>引导</title>
+      <link>https://blog.terrywh.net/tags/%E5%BC%95%E5%AF%BC/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/%E5%BC%95%E5%AF%BC/</guid>
       <description></description>
     </item>
     

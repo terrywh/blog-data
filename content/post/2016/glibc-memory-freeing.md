@@ -21,21 +21,11 @@ categories = "笔记"
 2. [Linux Programmer's Manual - mallopt](http://man7.org/linux/man-pages/man3/mallopt.3.html)：
 
 > **M_TRIM_THRESHOLD**  
-> When the amount of contiguous free memory at the top of the
-> heap grows sufficiently large, `free(3)` employs `sbrk(2)` to
-> release this memory back to the system.  (This can be useful
-> in programs that continue to execute for a long period after
-> freeing a significant amount of memory.)  The `M_TRIM_THRESHOLD`
-> parameter specifies the minimum size (in bytes) that this
-> block of memory must reach before `sbrk(2)` is used to trim the
-> heap.
+> When the amount of contiguous free memory at the top of the heap grows sufficiently large, `free(3)` employs `sbrk(2)` to release this memory back to the system.  (This can be useful in programs that continue to execute for a long period after freeing a significant amount of memory.)  The `M_TRIM_THRESHOLD` parameter specifies the minimum size (in bytes) that this block of memory must reach before `sbrk(2)` is used to trim the heap.
 > 
 > The default value for this parameter is `128*1024`. Setting `M_TRIM_THRESHOLD` to -1 disables trimming completely.
 > 
-> Modifying `M_TRIM_THRESHOLD` is a trade-off between increasing
-> the number of system calls (when the parameter is set low) and
-> wasting unused memory at the top of the heap (when the
-parameter is set high).
+> Modifying `M_TRIM_THRESHOLD` is a trade-off between increasing the number of system calls (when the parameter is set low) and wasting unused memory at the top of the heap (when the parameter is set high).
 >
 
 根据上面的资料，总结一下：
