@@ -1,4 +1,5 @@
 cleanDestinationDir = true
+publishDir = "docs"
 
 baseURL = "https://blog.terrywh.net"
 defaultContentLanguage = "zh-cn"
