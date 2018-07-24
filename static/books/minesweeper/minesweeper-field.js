@@ -2,7 +2,7 @@
 	var $field = $("<div class=\"field\"></div>").appendTo(".block.main"); // 创建一个 div 元素用来容纳雷区，并将其加入之前页面中
 	// 我们暂时将雷区定义为 24 * 24 个格子，大家可以尝试调整为其他数值
 	// 每个格子定义为 24 大小
-	var SIZE = 24, WIDTH = 24, HEIGHT = 24;
+	var SIZE = 24, WIDTH = 24, HEIGHT = 24, START;
 	var cells = {}, // 用于记录每个格子元素
 		nums  = {}; // 用于记录每个格子中的数字
 		// 如果对应格子不存在标记的数字，默认是 0（周围没有地雷）
@@ -33,7 +33,7 @@
 	// 打开指定的格子
 	function openCell($cell) {
 		if(!$cell || $cell.find(".mask").prop("hidden")) { // 连续打开的停止条件
-			return; 
+			return;
 			// 1. 当前格子不存在（向周围寻找时超出了范围）
 			// 2. 遇到了已经打开的格子
 		}
@@ -62,8 +62,9 @@
 			$(MineSweeperField).trigger("defeat"); // 自定义事件
 		}
 	}
-	
+
 	function flagCell($cell) {
+		if($cell.find(".mask").prop("hidden")) return;
 		$cell.find(".mask").toggleClass("flag"); // 插上或去掉 旗子
 		var $flags = $field.find(".mask.flag"), // 所有旗子
 			flagsCount = $flags.length,
@@ -85,12 +86,12 @@
 		if(flagsCount === 0 && bombsCount === 0) {
 			// 胜利了，显示胜利提示
 			$(".block.main .cover").text("你是一个值得称赞的工兵！").show();
-			$(MineSweeperField).trigger("victory") // 自定义事件
+			$(MineSweeperField).trigger("victory", Date.now() - START); // 自定义事件
 			// 在下一章我们会使用这里的事件，处理优秀流程逻辑
 		}
 	}
-	
-	// 使指定的格子中的提示数字加 1 
+
+	// 使指定的格子中的提示数字加 1
 	function incrCell(x, y) {
 		// ? : 是 三元运算符，请参看下文说明
 		var n = nums[x+":"+y]; // 当 numbs[x+":"+y] 对应的元素不存在时，获取 0 值
@@ -157,4 +158,8 @@
 			$(".block.main .cover").hide();
 		},
 	}
+	$(MineSweeperEntry).on("start", function() {
+		MineSweeperField.reset( parseInt(Math.random()*80) + 20 );
+		START = Date.now();
+	});
 }(jQuery))

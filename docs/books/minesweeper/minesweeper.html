@@ -4,21 +4,21 @@
 		<meta charset="utf-8" />
 		<title>扫雷 - 网页小游戏</title>
 		<!-- 这里引入的一个辅助库，帮助我们更好的定义网页和开发功能，可以暂不纠结具体 -->
-		<link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="styleSheet" />
-		<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="styleSheet" />
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 		<!-- 下面文件用来定义我们 扫雷 游戏的外观样式（见下文） -->
 		<link href="./minesweeper.css" rel="styleSheet" />
 	</head>
 	<body>
 		<!-- 用户登记 -->
 		<div class="block entry">
-			<form class="form-inline">
+			<form class="form-inline" id="entry_submit">
 				<fieldset class="form-group">
 					<label>请输入您的姓名：</label>
 					<input id="entry_input_name" type="text" class="form-control" placeholder="请输入您的姓名，以便将成绩计入排行榜！">
 				</fieldset>
 				<div class="entry-start">
-					<button id="entry_button_start" type="button" class="btn btn-primary">开始游戏</button>
+					<button type="submit" class="btn btn-primary">开始游戏</button>
 				</div>
 			</form>
 		</div>

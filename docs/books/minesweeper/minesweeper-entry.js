@@ -10,14 +10,18 @@
 	$("#entry_input_name").val(	localStorage.getItem("entry_input_name") )
 	// 第二个 $("#entry_input_name") 可以省略，让 .val 跟在前面 }) 后面
 	// 因为上面的操作都是针对 #entry_input_name 这个元素
-	
+	$("#entry_submit").on("submit", function(e) {
+		e.preventDefault();
+		// 开始游戏
+		$(MineSweeperEntry).trigger("start");
+	});
 	// 对外接口
 	window.MineSweeperEntry = {
 		// 接口1. 获取当前用户名
 		getName: function() {
 			return localStorage.getItem("entry_input_name") || "无名氏"
 		},
-		
+
 	}
 	// 位置 (D)
 }(jQuery))
