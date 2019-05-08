@@ -16,6 +16,20 @@ apt install aria2 build-essential cmake libpcre3-dev libssl-dev zlib1g-dev
 mkdir -p /data/server/v2ray
 ```
 
+#### BBR
+``` Bash
+# 验证
+lsmod | grep bbr
+# 挂载
+modprobe tcp_bbr
+echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
+# 启用
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+# 生效
+sysctl -p
+```
+
 #### NGINX
 
 ```

@@ -51,7 +51,7 @@
     },
     "datePublished": "2019-05-08",
     "description": "",
-    "wordCount": 62
+    "wordCount": 91
   }
 </script>
 
@@ -167,7 +167,7 @@
 
   
   &middot; Read in about 1 min
-  &middot; (62 Words)
+  &middot; (91 Words)
   <br>
   
 
@@ -185,6 +185,20 @@
 apt upgrade
 apt install aria2 build-essential cmake libpcre3-dev libssl-dev zlib1g-dev
 mkdir -p /data/server/v2ray
+</code></pre>
+
+<h4 id="bbr">BBR</h4>
+
+<pre><code class="language-Bash"># 验证
+lsmod | grep bbr
+# 挂载
+modprobe tcp_bbr
+echo &quot;tcp_bbr&quot; &gt;&gt; /etc/modules-load.d/modules.conf
+# 启用
+echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf
+echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf
+# 生效
+sysctl -p
 </code></pre>
 
 <h4 id="nginx">NGINX</h4>
