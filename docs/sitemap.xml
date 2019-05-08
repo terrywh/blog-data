@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.terrywh.net/post/2019/server_init/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/post/2018/linux-grub-install/</loc>
     <lastmod>2018-07-23T00:00:00+00:00</lastmod>
   </url>
@@ -163,7 +168,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,7 +210,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/post/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -277,7 +282,7 @@
   
   <url>
     <loc>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
