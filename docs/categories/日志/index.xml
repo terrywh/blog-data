@@ -21,9 +21,7 @@
       <guid>https://blog.terrywh.net/post/2015/clang-install/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -32,8 +30,7 @@
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2015/migrate/</guid>
-      <description>&lt;p&gt;blog.terrywh.net 迁移到 &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; 并重新部署，使用 &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 生成静态站点。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;blog.terrywh.net 迁移到 &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; 并重新部署，使用 &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 生成静态站点。&lt;/p&gt;</description>
     </item>
     
   </channel>

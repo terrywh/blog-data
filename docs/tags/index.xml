@@ -8,170 +8,71 @@
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
-    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.terrywh.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Archlinux</title>
-      <link>https://blog.terrywh.net/tags/archlinux/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <title>extension</title>
+      <link>https://blog.terrywh.net/tags/extension/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/archlinux/</guid>
+      <guid>https://blog.terrywh.net/tags/extension/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atom</title>
-      <link>https://blog.terrywh.net/tags/atom/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <title>external</title>
+      <link>https://blog.terrywh.net/tags/external/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/atom/</guid>
+      <guid>https://blog.terrywh.net/tags/external/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>C</title>
-      <link>https://blog.terrywh.net/tags/c/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <title>openssl</title>
+      <link>https://blog.terrywh.net/tags/openssl/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/c/</guid>
+      <guid>https://blog.terrywh.net/tags/openssl/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>C&#43;&#43;</title>
-      <link>https://blog.terrywh.net/tags/c&#43;&#43;/</link>
-      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <title>php</title>
+      <link>https://blog.terrywh.net/tags/php/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/c&#43;&#43;/</guid>
+      <guid>https://blog.terrywh.net/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Clang</title>
-      <link>https://blog.terrywh.net/tags/clang/</link>
-      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <title>static</title>
+      <link>https://blog.terrywh.net/tags/static/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/clang/</guid>
+      <guid>https://blog.terrywh.net/tags/static/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Cpp</title>
-      <link>https://blog.terrywh.net/tags/cpp/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <title>扩展</title>
+      <link>https://blog.terrywh.net/tags/%E6%89%A9%E5%B1%95/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/cpp/</guid>
+      <guid>https://blog.terrywh.net/tags/%E6%89%A9%E5%B1%95/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://blog.terrywh.net/tags/css/</link>
-      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <title>静态链接</title>
+      <link>https://blog.terrywh.net/tags/%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deepin</title>
-      <link>https://blog.terrywh.net/tags/deepin/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/deepin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Free</title>
-      <link>https://blog.terrywh.net/tags/free/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/free/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://blog.terrywh.net/tags/git/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Glibc</title>
-      <link>https://blog.terrywh.net/tags/glibc/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/glibc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go Plus</title>
-      <link>https://blog.terrywh.net/tags/go-plus/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/go-plus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Goroot</title>
-      <link>https://blog.terrywh.net/tags/goroot/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/goroot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grub</title>
-      <link>https://blog.terrywh.net/tags/grub/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/grub/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hook</title>
-      <link>https://blog.terrywh.net/tags/hook/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/hook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://blog.terrywh.net/tags/html/</link>
-      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://blog.terrywh.net/tags/hugo/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Js</title>
-      <link>https://blog.terrywh.net/tags/js/</link>
-      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/js/</guid>
+      <guid>https://blog.terrywh.net/tags/%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</guid>
       <description></description>
     </item>
     
@@ -185,47 +86,29 @@
     </item>
     
     <item>
-      <title>Memory</title>
-      <link>https://blog.terrywh.net/tags/memory/</link>
-      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <title>archlinux</title>
+      <link>https://blog.terrywh.net/tags/archlinux/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/memory/</guid>
+      <guid>https://blog.terrywh.net/tags/archlinux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Registry</title>
-      <link>https://blog.terrywh.net/tags/registry/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <title>deepin</title>
+      <link>https://blog.terrywh.net/tags/deepin/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/registry/</guid>
+      <guid>https://blog.terrywh.net/tags/deepin/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Shell</title>
-      <link>https://blog.terrywh.net/tags/shell/</link>
-      <pubDate>Sat, 07 Nov 2015 00:00:00 +0000</pubDate>
+      <title>grub</title>
+      <link>https://blog.terrywh.net/tags/grub/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Utility</title>
-      <link>https://blog.terrywh.net/tags/utility/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/utility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://blog.terrywh.net/tags/windows/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/windows/</guid>
+      <guid>https://blog.terrywh.net/tags/grub/</guid>
       <description></description>
     </item>
     
@@ -248,11 +131,191 @@
     </item>
     
     <item>
+      <title>GOROOT</title>
+      <link>https://blog.terrywh.net/tags/goroot/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/goroot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Registry</title>
+      <link>https://blog.terrywh.net/tags/registry/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/registry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Utility</title>
+      <link>https://blog.terrywh.net/tags/utility/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/utility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://blog.terrywh.net/tags/windows/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atom</title>
+      <link>https://blog.terrywh.net/tags/atom/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/atom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go-plus</title>
+      <link>https://blog.terrywh.net/tags/go-plus/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/go-plus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://blog.terrywh.net/tags/css/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://blog.terrywh.net/tags/html/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>https://blog.terrywh.net/tags/js/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>扫雷</title>
       <link>https://blog.terrywh.net/tags/%E6%89%AB%E9%9B%B7/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/%E6%89%AB%E9%9B%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://blog.terrywh.net/tags/c/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CPP</title>
+      <link>https://blog.terrywh.net/tags/cpp/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GLIBC</title>
+      <link>https://blog.terrywh.net/tags/glibc/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/glibc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>free</title>
+      <link>https://blog.terrywh.net/tags/free/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>memory</title>
+      <link>https://blog.terrywh.net/tags/memory/</link>
+      <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c&#43;&#43;</title>
+      <link>https://blog.terrywh.net/tags/c&#43;&#43;/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clang</title>
+      <link>https://blog.terrywh.net/tags/clang/</link>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/clang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://blog.terrywh.net/tags/shell/</link>
+      <pubDate>Sat, 07 Nov 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://blog.terrywh.net/tags/git/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hook</title>
+      <link>https://blog.terrywh.net/tags/hook/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/hook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://blog.terrywh.net/tags/hugo/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/hugo/</guid>
       <description></description>
     </item>
     

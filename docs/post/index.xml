@@ -14,6 +14,20 @@
     
     
     <item>
+      <title>PHP 静态链接 openssl/nghttp2 及外部扩展</title>
+      <link>https://blog.terrywh.net/post/2019/php-static-openssl/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/post/2019/php-static-openssl/</guid>
+      <description>注意: 以下过程是为 使用静态连接, 方便部署 规划的编译配置; 使用动态连接的情况很多流程可以简化（无需对 config.m4 进行修改）;
+  openssl 1.1.1b
+CC=gcc CXX=g++ ./Configure no-shared --prefix=/data/vendor/openssl-1.1.1 linux-x86_64  nghttp2 1.38.0
+PKG_CONFIG_PATH=/data/vendor/openssl-1.1.1/lib/pkgconfig CC=gcc CXX=g++ CFLAGS=-fPIC CXXFLAGS=-fPIC ./configure --prefix=/data/vendor/nghttp2-1.38.0 --enable-shared=no --enable-lib-only # --with-boost=/data/vendor/boost-1.70.0 --enable-asio-lib  curl 7.64.1
+CC=gcc CXX=g++ CFLAGS=-fPIC CPPFLAGS=-fPIC ./configure --prefix=/data/vendor/curl-7.64.1 --with-nghttp2=/data/vendor/nghttp2-1.38.0 --with-ssl=/data/vendor/openssl-1.1.1 --with-pic=pic --enable-ipv6 --enable-shared=no --without-libidn2 --disable-ldap --without-libpsl --without-lber --enable-ares  php 7.2.18
+CC=gcc CXX=g++ ./configure --prefix=/data/vendor/php-7.2.18 --with-config-file-path=/data/vendor/php-7.2.18/etc --disable-simplexml --disable-xml --disable-xmlreader --disable-xmlwriter --with-readline --enable-mbstring --without-pear --with-zlib --build=x86_64-linux-gnu  ldd &amp;gt; 扩展</description>
+    </item>
+    
+    <item>
       <title>Server Initialization</title>
       <link>https://blog.terrywh.net/post/2019/server_init/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
@@ -54,8 +68,8 @@
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2017/registry-utility/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~
-&lt;/p&gt;</description>
+&lt;p&gt;从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -64,8 +78,7 @@
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2016/minesweeper/4/</guid>
-      <description>&lt;p&gt;在 &lt;a href=&#34;https://blog.terrywh.net/images/2016/minesweeper/3&#34;&gt;第三章&lt;/a&gt; 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;在 &lt;a href=&#34;https://blog.terrywh.net/images/2016/minesweeper/3&#34;&gt;第三章&lt;/a&gt; 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,8 +88,7 @@
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2016/minesweeper/3/</guid>
       <description>&lt;p&gt;经过 [第一章][chapter-1] 和 [第二章][chapter-2] 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。&lt;br /&gt;
-在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
-&lt;/p&gt;</description>
+在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,9 +101,7 @@
 &lt;p&gt;Hints to the browser that might prime the pump for resources you will need.&lt;br /&gt;
 Preload is the only exception here, being more of an instruction than just a hint.
 &lt;strong&gt;AddyOsmani&lt;/strong&gt; @ &lt;a href=&#34;https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT&#34;&gt;https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -100,8 +110,7 @@ Preload is the only exception here, being more of an instruction than just a hin
       <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2016/minesweeper/2/</guid>
-      <description>&lt;p&gt;[上一章][chapter-1]我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;[上一章][chapter-1]我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,8 +119,7 @@ Preload is the only exception here, being more of an instruction than just a hin
       <pubDate>Fri, 17 Jun 2016 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2016/minesweeper/1/</guid>
-      <description>&lt;p&gt;记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -134,9 +142,7 @@ Preload is the only exception here, being more of an instruction than just a hin
       <guid>https://blog.terrywh.net/post/2015/clang-install/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -147,9 +153,7 @@ Preload is the only exception here, being more of an instruction than just a hin
       <guid>https://blog.terrywh.net/post/2015/shell-utility/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;总结了一些挺实用的 Shell 命令，Windows 和 Linux 的都有一些，如启用 Wifi 热点，清理 DNS 缓存，挂载共享等。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -158,8 +162,7 @@ Preload is the only exception here, being more of an instruction than just a hin
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2015/migrate/</guid>
-      <description>&lt;p&gt;blog.terrywh.net 迁移到 &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; 并重新部署，使用 &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 生成静态站点。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;blog.terrywh.net 迁移到 &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; 并重新部署，使用 &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; 生成静态站点。&lt;/p&gt;</description>
     </item>
     
   </channel>

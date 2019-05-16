@@ -34,7 +34,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.terrywh.net/touch-icon-144-precomposed.png">
 <link href="https://blog.terrywh.net/favicon.png" rel="icon">
 
-<meta name="generator" content="Hugo 0.41" />
+<meta name="generator" content="Hugo 0.55.5" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -90,22 +90,18 @@
 
 <div class="container nav secondary no-print">
   
-<a id="contact-link-email" class="contact_link" href="mailto:terry.wuhao[at]gmail.com">
-  <span class="fa fa-envelope-square"></span><span>email</span></a>
+<a id="contact-link-email" class="contact_link" aria-label="Email" href="mailto:terry.wuhao[at]gmail.com">
+  <span class="fa fa-envelope-square"></span></a>
 
 
 
-<a id="contact-link-github" class="contact_link" href="https://github.com/terrywh">
-  <span class="fa fa-github-square"></span><span>github</span></a>
-
-
-
-
+<a id="contact-link-github" class="contact_link" aria-label="Github" href="https://github.com/terrywh">
+  <span class="fa fa-github-square"></span></a>
 
 
 
 
-
+ 
 
 
 
@@ -118,8 +114,12 @@
 
 
 
-<a id="contact-link-rss" class="contact_link" href="https://blog.terrywh.net/index.xml" type="application/rss+xml">
-  <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+
+
+<a id="contact-link-rss" class="contact_link" aria-label="RSS" href="https://blog.terrywh.net/index.xml" type="application/rss+xml">
+  <span class="fa fa-rss-square"></span></a>
 
 
 
@@ -141,6 +141,40 @@
 
   </header>
   
+  
+    <article class="container content summary">
+  <div class="container hat">
+  <h2><a href="https://blog.terrywh.net/post/2019/php-static-openssl/">PHP 静态链接 openssl/nghttp2 及外部扩展
+</a>
+</h2>
+
+  <time datetime="2019-05-08">8 May, 2019</time>
+
+</div>
+
+  <p class="container content">
+  
+  
+    注意: 以下过程是为 使用静态连接, 方便部署 规划的编译配置; 使用动态连接的情况很多流程可以简化（无需对 config.m4 进行修改）;
+  openssl 1.1.1b
+CC=gcc CXX=g++ ./Configure no-shared --prefix=/data/vendor/openssl-1.1.1 linux-x86_64  nghttp2 1.38.0
+PKG_CONFIG_PATH=/data/vendor/openssl-1.1.1/lib/pkgconfig CC=gcc CXX=g++ CFLAGS=-fPIC CXXFLAGS=-fPIC ./configure --prefix=/data/vendor/nghttp2-1.38.0 --enable-shared=no --enable-lib-only # --with-boost=/data/vendor/boost-1.70.0 --enable-asio-lib  curl 7.64.1
+CC=gcc CXX=g++ CFLAGS=-fPIC CPPFLAGS=-fPIC ./configure --prefix=/data/vendor/curl-7.64.1 --with-nghttp2=/data/vendor/nghttp2-1.38.0 --with-ssl=/data/vendor/openssl-1.1.1 --with-pic=pic --enable-ipv6 --enable-shared=no --without-libidn2 --disable-ldap --without-libpsl --without-lber --enable-ares  php 7.2.18
+CC=gcc CXX=g++ ./configure --prefix=/data/vendor/php-7.2.18 --with-config-file-path=/data/vendor/php-7.2.18/etc --disable-simplexml --disable-xml --disable-xmlreader --disable-xmlwriter --with-readline --enable-mbstring --without-pear --with-zlib --build=x86_64-linux-gnu  ldd &gt; 扩展
+  
+
+
+</p>
+
+
+  <div class="container readlink">
+  <a href="https://blog.terrywh.net/post/2019/php-static-openssl/">Read more &rarr;</a>
+
+</div>
+
+
+</article>
+
   
     <article class="container content summary">
   <div class="container hat">
@@ -280,8 +314,8 @@
   
   
     <blockquote>
-<p>从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~
-</p>
+<p>从网络上各处收集到的各种调整 Windows 配置相关的注册表项，记录以备不时之需~</p>
+</blockquote>
   
 
 
@@ -310,8 +344,7 @@
   <p class="container content">
   
   
-    <p>在 <a href="/images/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。
-</p>
+    <p>在 <a href="/images/2016/minesweeper/3">第三章</a> 中我们基本完成了雷区的绘制和布雷相关接口功能，我们留下了一个未完成的功能，“一次性打开连续的空格”。在开始编写主要游戏流程前，我们先把这里完成。</p>
   
 
 
@@ -341,8 +374,7 @@
   
   
     <p>经过 [第一章][chapter-1] 和 [第二章][chapter-2] 我们已经将整个游戏的 “开头”（输入姓名、开始游戏）和 “结尾”（排行榜）做好了，今天我们来绘制雷区。<br />
-在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。
-</p>
+在绘制雷区时我们会使用上一章提到的 “动态绘制”，还会用到与第一章类似的一些样式来将我们的雷区绘制的更贴近于 Windows 的扫雷的效果。</p>
   
 
 
@@ -376,8 +408,6 @@
 Preload is the only exception here, being more of an instruction than just a hint.
 <strong>AddyOsmani</strong> @ <a href="https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT">https://plus.google.com/+AddyOsmani/posts/7JvGGPAAuCT</a></p>
 </blockquote>
-
-<p></p>
   
 
 
@@ -406,8 +436,7 @@ Preload is the only exception here, being more of an instruction than just a hin
   <p class="container content">
   
   
-    <p>[上一章][chapter-1]我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。
-</p>
+    <p>[上一章][chapter-1]我们实现了最基本的游戏界面和游戏的简单入口，这一章，我们完善和制作 排行榜 功能，并为将来游戏结束时使用、记录排行榜提供支持。</p>
   
 
 
@@ -416,36 +445,6 @@ Preload is the only exception here, being more of an instruction than just a hin
 
   <div class="container readlink">
   <a href="https://blog.terrywh.net/post/2016/minesweeper/2/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="https://blog.terrywh.net/post/2016/minesweeper/1/">扫雷（一）游戏入口（概念及准备）
-</a>
-</h2>
-
-  <time datetime="2016-06-17">17 Jun, 2016</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>记得我最开始接触编程就是父亲在“裕兴学习机”上开发了一款“扫雷”的游戏，从此开始喜欢上了计算机编程。作为纪念，也希望能给一些正在学习网页开发的同学一点点帮助，我这里也从头开始用“网页”技术开发一款“扫雷”的小游戏。
-</p>
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="https://blog.terrywh.net/post/2016/minesweeper/1/">Read more &rarr;</a>
 
 </div>
 
@@ -527,6 +526,7 @@ Preload is the only exception here, being more of an instruction than just a hin
 
 <script src="/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
 
 
     

@@ -8,9 +8,19 @@
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
+    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.terrywh.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>笔记</title>
+      <link>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>教程</title>
@@ -27,15 +37,6 @@
       <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/categories/%E6%97%A5%E5%BF%97/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>笔记</title>
-      <link>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     

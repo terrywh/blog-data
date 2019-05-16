@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C&#43;&#43; on Hello World</title>
+    <title>c&#43;&#43; on Hello World</title>
     <link>https://blog.terrywh.net/tags/c&#43;&#43;/</link>
-    <description>Recent content in C&#43;&#43; on Hello World</description>
+    <description>Recent content in c&#43;&#43; on Hello World</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
@@ -21,9 +21,7 @@
       <guid>https://blog.terrywh.net/post/2015/clang-install/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;安装了新版本 GCC 后，附加 rpath 参数编译安装 CLANG 解决找不到对应新版本的 libstdc++.so 库的问题&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
