@@ -64,3 +64,27 @@ scp -r root@source_host:/etc/letsencrypt/live/terrywh.net /etc/letsencrypt/live/
 aria2c --conf-path=/data/htdocs/downloads.terrywh.net/etc/aria2.conf
 /data/server/v2ray/v2ray --config /data/server/v2ray/config.json &>/dev/null &
 ```
+
+#### GCC
+```
+wget http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-9.1.0/gcc-9.1.0.tar.xz
+tar xf gcc-9.1.0.tar.xz
+cd gcc-9.1.0
+./contrib/download_prerequisites
+mkdir stage && cd stage
+../configure --enable-languages=c,c++ --prefix=/data/server/gcc-9.1.0 --enable-shared --enable-linker-build-id --without-included-gettext --enable-threads=posix --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --disable-werror --with-abi=m64 --disable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+make -j8
+sudo make install
+```
+
+#### CLANG (LLVM)
+
+```
+wget https://github.com/llvm/llvm-project/archive/llvmorg-8.0.1.tar.gz
+tar xf llvmorg-8.0.1.tar.gz
+cd llvm-project-llvmorg-8.0.0
+mkdir stage && cd stage
+CC=gcc CXX=g++ LDFLAGS="-L/data/server/gcc-9.1.0/lib64" cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/data/server/llvm-8.0.1 -DGCC_INSTALL_PREFIX=/data/server/gcc-9.1.0 -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld;openmp;polly" ../llvm
+make -j8
+sudo make install
+```

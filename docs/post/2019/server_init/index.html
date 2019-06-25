@@ -47,11 +47,11 @@
     "headline": "Server Initialization",
     "author": {
       "@type": "Person",
-      "name": "http://profiles.google.com/+?rel=author"
+      "name": "TerryWu"
     },
     "datePublished": "2019-05-08",
     "description": "",
-    "wordCount":  91 
+    "wordCount":  170 
   }
 </script>
 
@@ -118,12 +118,12 @@
 
 <div class="container nav secondary no-print">
   
-<a id="contact-link-email" class="contact_link" aria-label="Email" href="mailto:terry.wuhao[at]gmail.com">
+<a id="contact-link-email" class="contact_link" rel="me" aria-label="Email" href="mailto:terry.wuhao[at]gmail.com">
   <span class="fa fa-envelope-square"></span></a>
 
 
 
-<a id="contact-link-github" class="contact_link" aria-label="Github" href="https://github.com/terrywh">
+<a id="contact-link-github" class="contact_link" rel="me" aria-label="Github" href="https://github.com/terrywh">
   <span class="fa fa-github-square"></span></a>
 
 
@@ -167,7 +167,7 @@
 
   
   &middot; Read in about 1 min
-  &middot; (91 Words)
+  &middot; (170 Words)
   <br>
   
 
@@ -233,6 +233,29 @@ aria2c --conf-path=/data/htdocs/downloads.terrywh.net/etc/aria2.conf
 /data/server/v2ray/v2ray --config /data/server/v2ray/config.json &amp;&gt;/dev/null &amp;
 </code></pre>
 
+<h4 id="gcc">GCC</h4>
+
+<pre><code>wget http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-9.1.0/gcc-9.1.0.tar.xz
+tar xf gcc-9.1.0.tar.xz
+cd gcc-9.1.0
+./contrib/download_prerequisites
+mkdir stage &amp;&amp; cd stage
+../configure --enable-languages=c,c++ --prefix=/data/server/gcc-9.1.0 --enable-shared --enable-linker-build-id --without-included-gettext --enable-threads=posix --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --disable-werror --with-abi=m64 --disable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+make -j8
+sudo make install
+</code></pre>
+
+<h4 id="clang-llvm">CLANG (LLVM)</h4>
+
+<pre><code>wget https://github.com/llvm/llvm-project/archive/llvmorg-8.0.1.tar.gz
+tar xf llvmorg-8.0.1.tar.gz
+cd llvm-project-llvmorg-8.0.0
+mkdir stage &amp;&amp; cd stage
+CC=gcc CXX=g++ LDFLAGS=&quot;-L/data/server/gcc-9.1.0/lib64&quot; cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/data/server/llvm-8.0.1 -DGCC_INSTALL_PREFIX=/data/server/gcc-9.1.0 -DLLVM_TARGETS_TO_BUILD=&quot;X86&quot; -DLLVM_ENABLE_PROJECTS=&quot;clang;clang-tools-extra;compiler-rt;lld;openmp;polly&quot; ../llvm
+make -j8
+sudo make install
+</code></pre>
+
 </div>
 
 
@@ -259,11 +282,7 @@ aria2c --conf-path=/data/htdocs/downloads.terrywh.net/etc/aria2.conf
 
 </div>
 
-  <div class="container comments">
-  <h2>Comments</h2>
   
-
-</div>
 
 </footer>
 
