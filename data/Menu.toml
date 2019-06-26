@@ -7,7 +7,7 @@
 	URL = "/tags"
 
 [3-books]
-	Name = "教程"
+	Name = "系列"
 	URL = "/books"
 
 [4-flame]

@@ -64,7 +64,6 @@ scp -r root@source_host:/etc/letsencrypt/live/terrywh.net /etc/letsencrypt/live/
 aria2c --conf-path=/data/htdocs/downloads.terrywh.net/etc/aria2.conf
 /data/server/v2ray/v2ray --config /data/server/v2ray/config.json &>/dev/null &
 ```
-
 #### GCC
 ```
 wget http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-9.1.0/gcc-9.1.0.tar.xz
@@ -72,6 +71,7 @@ tar xf gcc-9.1.0.tar.xz
 cd gcc-9.1.0
 ./contrib/download_prerequisites
 mkdir stage && cd stage
+# 下面命令行可参考当前已安装的 gcc -v 的配置
 ../configure --enable-languages=c,c++ --prefix=/data/server/gcc-9.1.0 --enable-shared --enable-linker-build-id --without-included-gettext --enable-threads=posix --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --disable-werror --with-abi=m64 --disable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 make -j8
 sudo make install
