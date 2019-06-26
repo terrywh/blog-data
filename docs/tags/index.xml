@@ -77,15 +77,6 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://blog.terrywh.net/tags/linux/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>archlinux</title>
       <link>https://blog.terrywh.net/tags/archlinux/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
@@ -109,6 +100,15 @@
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/grub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://blog.terrywh.net/tags/linux/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/linux/</guid>
       <description></description>
     </item>
     
