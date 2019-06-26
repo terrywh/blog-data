@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>clang</title>
+      <link>https://blog.terrywh.net/tags/clang/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/clang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>extension</title>
       <link>https://blog.terrywh.net/tags/extension/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
@@ -28,6 +37,24 @@
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/external/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gcc</title>
+      <link>https://blog.terrywh.net/tags/gcc/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/gcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llvm</title>
+      <link>https://blog.terrywh.net/tags/llvm/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/llvm/</guid>
       <description></description>
     </item>
     
@@ -55,6 +82,15 @@
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://blog.terrywh.net/tags/v2ray/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
+      <guid>https://blog.terrywh.net/tags/v2ray/</guid>
       <description></description>
     </item>
     
@@ -271,15 +307,6 @@
       <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>clang</title>
-      <link>https://blog.terrywh.net/tags/clang/</link>
-      <pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate>
-      <author>terry.wuhao[at]gmail.com (TerryWu)</author>
-      <guid>https://blog.terrywh.net/tags/clang/</guid>
       <description></description>
     </item>
     
