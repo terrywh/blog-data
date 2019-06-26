@@ -262,8 +262,8 @@ CC=gcc CXX=g++ ./configure --prefix=/data/vendor/php-7.2.18 --with-config-file-p
   <p class="container content">
   
   
-    Flame 是一个 基于 PHP 协程 Generator 实现的异步协程式网络开发框架（扩展）:
-&lt;?php // 框架初始化（自动设置进程名称） flame\init(&quot;http-server&quot;, [ &quot;worker&quot; =&gt; 4, // 多进程服务 ]); // 启用一个协程作为入口 flame\go(function() { // 创建 http 服务器 $server = new flame\http\server(&quot;:::7678&quot;); // 设置默认处理程序 $server-&gt;before(function($req, $res, $match) { if($match) { $req-&gt;data[&quot;time&quot;] = flame\time\now(); } })-&gt;get(&quot;/hello&quot;, function($req, $res) { yield $res-&gt;write(&quot;hello &quot;); yield $res-&gt;end(&quot; world&quot;); })-&gt;after(function($req, $res, $match) { if($match) { flame\log\info(&quot;cost&quot;, flame\time\now() - $req-&gt;data[&quot;time&quot;], &quot;ms&quot;); }else{ $res-&gt;status = 404; $res-&gt;body = &quot;not found&quot;; } }); // 启动并运行服务器 yield $server-&gt;run(); }); // 框架调度执行 flame\run();  https://github.
+    https://github.com/terrywh/php-flame Flame 是一个基于协程的异步网络开发框架（PHP扩展）类似 Swoole 但相对更简单一些:
+&lt;?php // 框架初始化 flame\init(&quot;http_server_demo&quot;); // 第一个（主）协程 flame\go(function() { // 创建 HTTP 服务器（监听） $server = new flame\http\server(&quot;:::56101&quot;); $server -&gt;before(function($req, $res) { // 前置处理器（HOOK） $req-&gt;data[&quot;before&quot;] = flame\time\now(); // 记录请求开始时间 }) -&gt;get(&quot;/hello&quot;, function($req, $res) { // 路径处理器 // 简单响应方式 $res-&gt;status = 200; $res-&gt;body = &quot;world&quot;; }) -&gt;post(&quot;/hello/world&quot;, function($req, $res) { // 路径处理器 // Transfer-Encoding: Chunked $res-&gt;write_header(200); $res-&gt;write(&quot;CHUNKED RESPONSE:&quot;) $res-&gt;write($res-&gt;body); $res-&gt;end(); }) -&gt;after(function($req, $res, $r) { // 后置处理器（HOOK） flame\log\trace($req-&gt;method, $req-&gt;path // 请求时长日志记录 , &quot;in&quot;, (flame\time\now() - $req-&gt;data[&quot;before&quot;]), &quot;ms&quot;); if(!
   
 
 

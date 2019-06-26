@@ -8,41 +8,45 @@ type = "post"
 
 +++
 
-`Flame` 是一个 基于 PHP 协程 `Generator` 实现的异步协程式网络开发框架（扩展）:
+#### [https://github.com/terrywh/php-flame](https://github.com/terrywh/php-flame)
+`Flame` 是一个基于协程的异步网络开发框架（PHP扩展）类似 Swoole 但相对更简单一些:
 
 ``` PHP
 <?php
-// 框架初始化（自动设置进程名称）
-flame\init("http-server", [
-	"worker" => 4, // 多进程服务
-]);
-// 启用一个协程作为入口
+// 框架初始化
+flame\init("http_server_demo");
+// 第一个（主）协程
 flame\go(function() {
-	// 创建 http 服务器
-	$server = new flame\http\server(":::7678");
-	// 设置默认处理程序
-	$server->before(function($req, $res, $match) {
-		if($match) {
-			$req->data["time"] = flame\time\now();
-		}
-	})->get("/hello", function($req, $res) {
-		yield $res->write("hello ");
-		yield $res->end(" world");
-	})->after(function($req, $res, $match) {
-		if($match) {
-			flame\log\info("cost", flame\time\now() - $req->data["time"], "ms");
-		}else{
-			$res->status = 404;
-			$res->body = "not found";
-		}
-	});
-	// 启动并运行服务器
-	yield $server->run();
+    // 创建 HTTP 服务器（监听）
+    $server = new flame\http\server(":::56101");
+
+    $server
+        ->before(function($req, $res) { // 前置处理器（HOOK）
+            $req->data["before"] = flame\time\now(); // 记录请求开始时间
+        })
+        ->get("/hello", function($req, $res) { // 路径处理器
+            // 简单响应方式
+            $res->status = 200;
+            $res->body = "world";
+        })
+        ->post("/hello/world", function($req, $res) { // 路径处理器
+            // Transfer-Encoding: Chunked
+            $res->write_header(200);
+            $res->write("CHUNKED RESPONSE:")
+            $res->write($res->body);
+            $res->end();
+        })
+        ->after(function($req, $res, $r) {
+            // 后置处理器（HOOK）
+            flame\log\trace($req->method, $req->path // 请求时长日志记录
+                , "in", (flame\time\now() - $req->data["before"]), "ms");
+            if(!$r) {
+                $res->status = 404;
+                $res->file(__DIR__."/404.html"); // 响应文件
+            }
+        });
+    $server->run();
 });
-// 框架调度执行
+// 启动（调度）
 flame\run();
 ```
-
-#### [https://github.com/terrywh/php-flame](https://github.com/terrywh/php-flame)
-* [文档](https://terrywh.github.io/php-flame)
-* [示例](https://github.com/terrywh/php-flame/blob/master/examples/http_server.php)
