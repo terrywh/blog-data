@@ -61,7 +61,7 @@
     },
     "datePublished": "2019-05-08",
     "description": "",
-    "wordCount":  189 
+    "wordCount":  198 
   }
 </script>
 
@@ -186,7 +186,7 @@
 
   
   &middot; Read in about 1 min
-  &middot; (189 Words)
+  &middot; (198 Words)
   <br>
   
 <a class="label" href="https://blog.terrywh.net/tags/v2ray">v2ray</a>
@@ -251,6 +251,8 @@ unzip ~/v2ray-linux-64.zip
 
 <pre><code>mkdir -p /etc/letsencrypt/live/
 scp -r root@source_host:/etc/letsencrypt/live/terrywh.net /etc/letsencrypt/live/
+certbot certonly -d &quot;*.terrywh.net&quot; --manual --preferred-challenges dns
+certbot renew
 </code></pre>
 
 <h4 id="start">START</h4>

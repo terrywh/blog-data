@@ -56,6 +56,8 @@ unzip ~/v2ray-linux-64.zip
 ```
 mkdir -p /etc/letsencrypt/live/
 scp -r root@source_host:/etc/letsencrypt/live/terrywh.net /etc/letsencrypt/live/
+certbot certonly -d "*.terrywh.net" --manual --preferred-challenges dns
+certbot renew
 ```
 
 #### START
