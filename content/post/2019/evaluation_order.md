@@ -1,6 +1,6 @@
 +++
 
-title = "C++ 函数参数求值顺序"
+title = "C++ 表达式求值顺序"
 date = "2019-05-08"
 tags = ["c++", "evaluation", "order"]
 cover = "/images/default-cover.png"
