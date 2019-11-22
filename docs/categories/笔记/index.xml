@@ -8,7 +8,7 @@
     <managingEditor>terry.wuhao[at]gmail.com (TerryWu)</managingEditor>
     <webMaster>terry.wuhao[at]gmail.com (TerryWu)</webMaster>
     <copyright>@copyright 2017</copyright>
-    <lastBuildDate>Wed, 08 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.terrywh.net/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,12 +16,11 @@
     <item>
       <title>C&#43;&#43; 表达式求值顺序</title>
       <link>https://blog.terrywh.net/post/2019/evaluation_order/</link>
-      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
       <author>terry.wuhao[at]gmail.com (TerryWu)</author>
       <guid>https://blog.terrywh.net/post/2019/evaluation_order/</guid>
       <description>这两天突然碰到的一个问题，在开发和正式环境由于切换编译器导致了一些问题；下面的示例代码演示：
-#include &amp;lt;iostream&amp;gt; int test_evaluate_order(int a, int b, int c) { return a + b + c; } int fa() { std::cout &amp;lt;&amp;lt; &amp;quot;1&amp;quot; &amp;lt;&amp;lt; std::endl; return 1; } int fb() { std::cout &amp;lt;&amp;lt; &amp;quot;2&amp;quot; &amp;lt;&amp;lt; std::endl; return 2; } int fc() { std::cout &amp;lt;&amp;lt; &amp;quot;3&amp;quot; &amp;lt;&amp;lt; std::endl; return 3; } int main() { test_evaluate_order(fa(), fb(), fc()); return 0; }  参见：(CompilerExplorer)[https://godbolt.org/z/z2W7Yt]
-上述代码在编译执行时：
+#include &amp;lt;iostream&amp;gt; int test_evaluate_order(int a, int b, int c) { return a + b + c; } int fa() { std::cout &amp;lt;&amp;lt; &amp;quot;1&amp;quot; &amp;lt;&amp;lt; std::endl; return 1; } int fb() { std::cout &amp;lt;&amp;lt; &amp;quot;2&amp;quot; &amp;lt;&amp;lt; std::endl; return 2; } int fc() { std::cout &amp;lt;&amp;lt; &amp;quot;3&amp;quot; &amp;lt;&amp;lt; std::endl; return 3; } int main() { test_evaluate_order(fa(), fb(), fc()); return 0; }  上述代码在编译执行时：
  在 clang v9.0.0 版本下，运行输出：
 1 2 3  在 gcc v9.</description>
     </item>

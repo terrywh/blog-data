@@ -1,7 +1,7 @@
 +++
 
 title = "C++ 表达式求值顺序"
-date = "2019-05-08"
+date = "2019-11-22"
 tags = ["c++", "evaluation", "order"]
 cover = "/images/default-cover.png"
 categories = "笔记"
@@ -37,8 +37,6 @@ int main() {
 }
 ```
 
-参见：(CompilerExplorer)[https://godbolt.org/z/z2W7Yt]
-
 上述代码在编译执行时：
 
 1. 在 clang v9.0.0 版本下，运行输出：
@@ -53,6 +51,8 @@ int main() {
 2
 1
 ```
+
+参见：(CompilerExplorer)[https://godbolt.org/z/k4nTsA]
 
 即上述编译器实现在对参数求值顺序 (`argument order of evaluation`) 的定义上刚好相反；若各参数求值存在依赖，这个顺序可能就会导致问题出现；
 
