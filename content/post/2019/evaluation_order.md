@@ -52,7 +52,7 @@ int main() {
 1
 ```
 
-参见：(CompilerExplorer)[https://godbolt.org/z/k4nTsA]
+参见：[CompilerExplorer](https://godbolt.org/z/k4nTsA)
 
 即上述编译器实现在对参数求值顺序 (`argument order of evaluation`) 的定义上刚好相反；若各参数求值存在依赖，这个顺序可能就会导致问题出现；
 
