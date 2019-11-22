@@ -166,8 +166,9 @@
   
     这两天突然碰到的一个问题，在开发和正式环境由于切换编译器导致了一些问题；下面的示例代码演示：
 #include &lt;iostream&gt; int test_evaluate_order(int a, int b, int c) { return a + b + c; } int fa() { std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl; return 1; } int fb() { std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl; return 2; } int fc() { std::cout &lt;&lt; &quot;3&quot; &lt;&lt; std::endl; return 3; } int main() { test_evaluate_order(fa(), fb(), fc()); return 0; }  参见：(CompilerExplorer)[https://godbolt.org/z/z2W7Yt]
-上述代码在编译执行时： 1. 在 clang v9.0.0 版本下，运行输出：
-1 2 3   在 gcc v9.
+上述代码在编译执行时：
+ 在 clang v9.0.0 版本下，运行输出：
+1 2 3  在 gcc v9.
   
 
 

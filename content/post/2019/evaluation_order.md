@@ -40,6 +40,7 @@ int main() {
 参见：(CompilerExplorer)[https://godbolt.org/z/z2W7Yt]
 
 上述代码在编译执行时：
+
 1. 在 clang v9.0.0 版本下，运行输出：
 ```
 1
@@ -52,6 +53,7 @@ int main() {
 2
 1
 ```
+
 即上述编译器实现在对参数求值顺序 (`argument order of evaluation`) 的定义上刚好相反；若各参数求值存在依赖，这个顺序可能就会导致问题出现；
 
 后查询标准确认 “C++ 标准中未对参数求值顺序进行规定” (`The order of evaluation of arguments is unspecified.`)，即两种实现方式均“符合标准”；包括在正常表达式计算中，也存在类似的说法；在 [stackoverflow.com](https://stackoverflow.com/questions/2934904/order-of-evaluation-in-c-function-parameters) 里存在对应问题的详细讨论；
