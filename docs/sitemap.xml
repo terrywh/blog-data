@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.terrywh.net/post/2019/evaluation_order/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/categories/</loc>
     <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -37,7 +42,19 @@
   </url>
   
   <url>
+    <loc>https://blog.terrywh.net/tags/c&#43;&#43;/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.terrywh.net/tags/clang/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.terrywh.net/tags/evaluation/</loc>
     <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -68,6 +85,12 @@
   
   <url>
     <loc>https://blog.terrywh.net/tags/openssl/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.terrywh.net/tags/order/</loc>
     <lastmod>2019-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -299,12 +322,6 @@
   <url>
     <loc>https://blog.terrywh.net/tags/memory/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.terrywh.net/tags/c&#43;&#43;/</loc>
-    <lastmod>2015-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
