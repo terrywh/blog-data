@@ -94,3 +94,13 @@ CC=gcc CXX=g++ LDFLAGS="-L/data/server/gcc-9.1.0/lib64" cmake -DCMAKE_BUILD_TYPE
 make -j8
 sudo make install
 ```
+
+#### GDB (pretty print)
+```
+python
+import sys
+sys.path.insert(0, '/data/server/gcc-10.2/share/gcc-10.2.0/python')
+end
+
+source /data/server/gcc-10.2/lib64/libstdc++.so.6.0.28-gdb.py
+```
